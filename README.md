@@ -9,4 +9,4 @@ un’aula assegnata. I Docenti hanno un nome, un cognome e un titolo di studio.
 Ogni Aula ha una capienza, un nome e un elenco di risorse. Ogni corso ha un certo numero di studenti partecipanti, iscritti a quella specifica edizione.
 Ogni studente ha un nome, un cognome e una matricola. Per ogni lezione occorre tenere traccia dei presenti.
 
-Il software sarà diviso in almeno 5 form per la creazione dei vari oggetti.
+Il software sarà diviso in almeno 5 form per la creazione dei vari oggetti, il linguaggio utilizzato sarà c# e come comparto grafico verrà utilizzato Windows form con la tecnologia net 5.0 per maggiore compatibilità.
