@@ -1,5 +1,6 @@
 # Gestione-corsi
 Lavoro 4H, Gestione Corsi
+Deniel Katire Alejandro Cevallos(titolare) Vignali Davide()
 
 Si vuole realizzare un sistema per la gestione di Corsi. Ciascun corso ha un nome e un
 numero intero che indica l’edizione. Ciascun corso si articola in un certo numero di lezioni.
