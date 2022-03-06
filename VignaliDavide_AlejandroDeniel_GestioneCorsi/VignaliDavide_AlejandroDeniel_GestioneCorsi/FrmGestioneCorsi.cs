@@ -11,10 +11,10 @@ using GestioneCorsi.Library;
 
 namespace VignaliDavide_AlejandroDeniel_GestioneCorsi
 {
-    public partial class Form1 : Form
+    public partial class FrmGestioneCorsi : Form
     {
         Gestione gestioneCorsi;
-        public Form1()
+        public FrmGestioneCorsi()
         {
             InitializeComponent();
             gestioneCorsi = new Gestione();

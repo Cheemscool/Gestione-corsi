@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\Progetto\\Gestione-corsi\\VignaliDavide_AlejandroDeniel_GestioneCorsi\\GestioneCorsi.Library\\GestioneCorsi.Library.csproj",
+      "projectUniqueName": "F:\\Progetto\\Gestione Corsi\\VignaliDavide_AlejandroDeniel_GestioneCorsi\\GestioneCorsi.Library\\GestioneCorsi.Library.csproj",
       "projectName": "GestioneCorsi.Library",
-      "projectPath": "F:\\Progetto\\Gestione-corsi\\VignaliDavide_AlejandroDeniel_GestioneCorsi\\GestioneCorsi.Library\\GestioneCorsi.Library.csproj",
+      "projectPath": "F:\\Progetto\\Gestione Corsi\\VignaliDavide_AlejandroDeniel_GestioneCorsi\\GestioneCorsi.Library\\GestioneCorsi.Library.csproj",
       "packagesPath": "C:\\Users\\Deniel\\.nuget\\packages\\",
-      "outputPath": "F:\\Progetto\\Gestione-corsi\\VignaliDavide_AlejandroDeniel_GestioneCorsi\\GestioneCorsi.Library\\obj\\",
+      "outputPath": "F:\\Progetto\\Gestione Corsi\\VignaliDavide_AlejandroDeniel_GestioneCorsi\\GestioneCorsi.Library\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Deniel\\AppData\\Roaming\\NuGet\\NuGet.Config",

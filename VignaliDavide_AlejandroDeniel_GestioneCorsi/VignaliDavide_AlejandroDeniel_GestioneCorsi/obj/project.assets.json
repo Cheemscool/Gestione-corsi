@@ -35,11 +35,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\Progetto\\Gestione-corsi\\VignaliDavide_AlejandroDeniel_GestioneCorsi\\VignaliDavide_AlejandroDeniel_GestioneCorsi\\VignaliDavide_AlejandroDeniel_GestioneCorsi.csproj",
+      "projectUniqueName": "F:\\Progetto\\Gestione Corsi\\VignaliDavide_AlejandroDeniel_GestioneCorsi\\VignaliDavide_AlejandroDeniel_GestioneCorsi\\VignaliDavide_AlejandroDeniel_GestioneCorsi.csproj",
       "projectName": "VignaliDavide_AlejandroDeniel_GestioneCorsi",
-      "projectPath": "F:\\Progetto\\Gestione-corsi\\VignaliDavide_AlejandroDeniel_GestioneCorsi\\VignaliDavide_AlejandroDeniel_GestioneCorsi\\VignaliDavide_AlejandroDeniel_GestioneCorsi.csproj",
+      "projectPath": "F:\\Progetto\\Gestione Corsi\\VignaliDavide_AlejandroDeniel_GestioneCorsi\\VignaliDavide_AlejandroDeniel_GestioneCorsi\\VignaliDavide_AlejandroDeniel_GestioneCorsi.csproj",
       "packagesPath": "C:\\Users\\Deniel\\.nuget\\packages\\",
-      "outputPath": "F:\\Progetto\\Gestione-corsi\\VignaliDavide_AlejandroDeniel_GestioneCorsi\\VignaliDavide_AlejandroDeniel_GestioneCorsi\\obj\\",
+      "outputPath": "F:\\Progetto\\Gestione Corsi\\VignaliDavide_AlejandroDeniel_GestioneCorsi\\VignaliDavide_AlejandroDeniel_GestioneCorsi\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Deniel\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -56,8 +56,8 @@
         "net5.0-windows7.0": {
           "targetAlias": "net5.0-windows",
           "projectReferences": {
-            "F:\\Progetto\\Gestione-corsi\\VignaliDavide_AlejandroDeniel_GestioneCorsi\\GestioneCorsi.Library\\GestioneCorsi.Library.csproj": {
-              "projectPath": "F:\\Progetto\\Gestione-corsi\\VignaliDavide_AlejandroDeniel_GestioneCorsi\\GestioneCorsi.Library\\GestioneCorsi.Library.csproj"
+            "F:\\Progetto\\Gestione Corsi\\VignaliDavide_AlejandroDeniel_GestioneCorsi\\GestioneCorsi.Library\\GestioneCorsi.Library.csproj": {
+              "projectPath": "F:\\Progetto\\Gestione Corsi\\VignaliDavide_AlejandroDeniel_GestioneCorsi\\GestioneCorsi.Library\\GestioneCorsi.Library.csproj"
             }
           }
         }
