@@ -1,0 +1,12 @@
+F:\Progetto\Gestione-corsi\VignaliDavide_AlejandroDeniel_GestioneCorsi\GestioneCorsi.Library\bin\Debug\net5.0-windows\GestioneCorsi.Library.deps.json
+F:\Progetto\Gestione-corsi\VignaliDavide_AlejandroDeniel_GestioneCorsi\GestioneCorsi.Library\bin\Debug\net5.0-windows\GestioneCorsi.Library.dll
+F:\Progetto\Gestione-corsi\VignaliDavide_AlejandroDeniel_GestioneCorsi\GestioneCorsi.Library\bin\Debug\net5.0-windows\ref\GestioneCorsi.Library.dll
+F:\Progetto\Gestione-corsi\VignaliDavide_AlejandroDeniel_GestioneCorsi\GestioneCorsi.Library\bin\Debug\net5.0-windows\GestioneCorsi.Library.pdb
+F:\Progetto\Gestione-corsi\VignaliDavide_AlejandroDeniel_GestioneCorsi\GestioneCorsi.Library\obj\Debug\net5.0-windows\GestioneCorsi.Library.csproj.AssemblyReference.cache
+F:\Progetto\Gestione-corsi\VignaliDavide_AlejandroDeniel_GestioneCorsi\GestioneCorsi.Library\obj\Debug\net5.0-windows\GestioneCorsi.Library.GeneratedMSBuildEditorConfig.editorconfig
+F:\Progetto\Gestione-corsi\VignaliDavide_AlejandroDeniel_GestioneCorsi\GestioneCorsi.Library\obj\Debug\net5.0-windows\GestioneCorsi.Library.AssemblyInfoInputs.cache
+F:\Progetto\Gestione-corsi\VignaliDavide_AlejandroDeniel_GestioneCorsi\GestioneCorsi.Library\obj\Debug\net5.0-windows\GestioneCorsi.Library.AssemblyInfo.cs
+F:\Progetto\Gestione-corsi\VignaliDavide_AlejandroDeniel_GestioneCorsi\GestioneCorsi.Library\obj\Debug\net5.0-windows\GestioneCorsi.Library.csproj.CoreCompileInputs.cache
+F:\Progetto\Gestione-corsi\VignaliDavide_AlejandroDeniel_GestioneCorsi\GestioneCorsi.Library\obj\Debug\net5.0-windows\GestioneCorsi.Library.dll
+F:\Progetto\Gestione-corsi\VignaliDavide_AlejandroDeniel_GestioneCorsi\GestioneCorsi.Library\obj\Debug\net5.0-windows\ref\GestioneCorsi.Library.dll
+F:\Progetto\Gestione-corsi\VignaliDavide_AlejandroDeniel_GestioneCorsi\GestioneCorsi.Library\obj\Debug\net5.0-windows\GestioneCorsi.Library.pdb
