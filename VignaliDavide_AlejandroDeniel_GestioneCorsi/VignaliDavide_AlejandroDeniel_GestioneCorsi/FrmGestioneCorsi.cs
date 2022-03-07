@@ -19,6 +19,5 @@ namespace VignaliDavide_AlejandroDeniel_GestioneCorsi
             InitializeComponent();
             gestioneCorsi = new Gestione();
         }
-
     }
 }
