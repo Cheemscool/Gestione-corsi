@@ -19,5 +19,11 @@ namespace VignaliDavide_AlejandroDeniel_GestioneCorsi
             InitializeComponent();
             gestioneCorsi = new Gestione();
         }
+
+        private void docenteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmAggiungiDocente frmAggiungiDocente = new FrmAggiungiDocente(gestioneCorsi);
+            frmAggiungiDocente.ShowDialog();
+        }
     }
 }
