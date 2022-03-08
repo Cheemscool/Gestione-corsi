@@ -11,10 +11,10 @@ using GestioneCorsi.Library;
 
 namespace VignaliDavide_AlejandroDeniel_GestioneCorsi
 {
-    public partial class FrmAggiungiDocente : Form
+    public partial class FrmAggiungiStudente : Form
     {
         Gestione gestioneCorsi;
-        public FrmAggiungiDocente(Gestione gestione)
+        public FrmAggiungiStudente(Gestione gestione)
         {
             InitializeComponent();
             gestioneCorsi = gestione;
@@ -22,12 +22,12 @@ namespace VignaliDavide_AlejandroDeniel_GestioneCorsi
 
         private void btnAggiungiDocente_Click(object sender, EventArgs e)
         {
-            if (txtBoxNome.Text == "" || txtBoxCognome.Text == "" || cmbBoxTitoloStudio.SelectedItem == null)
+            if (txtBoxNome.Text == "" || txtBoxCognome.Text == "" || txtBoxMatricola.Text == "")
                 MessageBox.Show("Per procedere devi compilare tutti i campi.");
             else
             {
-                Docente docente = new Docente(txtBoxNome.Text, txtBoxCognome.Text, cmbBoxTitoloStudio.Text);
-                gestioneCorsi.Docenti.Add(docente);
+                Studente studente = new Studente(txtBoxNome.Text, txtBoxCognome.Text, txtBoxMatricola.Text);
+                gestioneCorsi.Studenti.Add(studente);
                 Close();
             }
         }

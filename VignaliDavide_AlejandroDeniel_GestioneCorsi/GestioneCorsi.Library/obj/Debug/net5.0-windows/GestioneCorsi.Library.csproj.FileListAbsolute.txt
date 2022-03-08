@@ -22,3 +22,15 @@ E:\GestioneCorsi\Gestione-corsi\VignaliDavide_AlejandroDeniel_GestioneCorsi\Gest
 E:\GestioneCorsi\Gestione-corsi\VignaliDavide_AlejandroDeniel_GestioneCorsi\GestioneCorsi.Library\obj\Debug\net5.0-windows\GestioneCorsi.Library.dll
 E:\GestioneCorsi\Gestione-corsi\VignaliDavide_AlejandroDeniel_GestioneCorsi\GestioneCorsi.Library\obj\Debug\net5.0-windows\ref\GestioneCorsi.Library.dll
 E:\GestioneCorsi\Gestione-corsi\VignaliDavide_AlejandroDeniel_GestioneCorsi\GestioneCorsi.Library\obj\Debug\net5.0-windows\GestioneCorsi.Library.pdb
+C:\Users\Deniel\Desktop\Gestione Corsi\VignaliDavide_AlejandroDeniel_GestioneCorsi\GestioneCorsi.Library\bin\Debug\net5.0-windows\GestioneCorsi.Library.deps.json
+C:\Users\Deniel\Desktop\Gestione Corsi\VignaliDavide_AlejandroDeniel_GestioneCorsi\GestioneCorsi.Library\bin\Debug\net5.0-windows\GestioneCorsi.Library.dll
+C:\Users\Deniel\Desktop\Gestione Corsi\VignaliDavide_AlejandroDeniel_GestioneCorsi\GestioneCorsi.Library\bin\Debug\net5.0-windows\ref\GestioneCorsi.Library.dll
+C:\Users\Deniel\Desktop\Gestione Corsi\VignaliDavide_AlejandroDeniel_GestioneCorsi\GestioneCorsi.Library\bin\Debug\net5.0-windows\GestioneCorsi.Library.pdb
+C:\Users\Deniel\Desktop\Gestione Corsi\VignaliDavide_AlejandroDeniel_GestioneCorsi\GestioneCorsi.Library\obj\Debug\net5.0-windows\GestioneCorsi.Library.csproj.AssemblyReference.cache
+C:\Users\Deniel\Desktop\Gestione Corsi\VignaliDavide_AlejandroDeniel_GestioneCorsi\GestioneCorsi.Library\obj\Debug\net5.0-windows\GestioneCorsi.Library.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Deniel\Desktop\Gestione Corsi\VignaliDavide_AlejandroDeniel_GestioneCorsi\GestioneCorsi.Library\obj\Debug\net5.0-windows\GestioneCorsi.Library.AssemblyInfoInputs.cache
+C:\Users\Deniel\Desktop\Gestione Corsi\VignaliDavide_AlejandroDeniel_GestioneCorsi\GestioneCorsi.Library\obj\Debug\net5.0-windows\GestioneCorsi.Library.AssemblyInfo.cs
+C:\Users\Deniel\Desktop\Gestione Corsi\VignaliDavide_AlejandroDeniel_GestioneCorsi\GestioneCorsi.Library\obj\Debug\net5.0-windows\GestioneCorsi.Library.csproj.CoreCompileInputs.cache
+C:\Users\Deniel\Desktop\Gestione Corsi\VignaliDavide_AlejandroDeniel_GestioneCorsi\GestioneCorsi.Library\obj\Debug\net5.0-windows\GestioneCorsi.Library.dll
+C:\Users\Deniel\Desktop\Gestione Corsi\VignaliDavide_AlejandroDeniel_GestioneCorsi\GestioneCorsi.Library\obj\Debug\net5.0-windows\ref\GestioneCorsi.Library.dll
+C:\Users\Deniel\Desktop\Gestione Corsi\VignaliDavide_AlejandroDeniel_GestioneCorsi\GestioneCorsi.Library\obj\Debug\net5.0-windows\GestioneCorsi.Library.pdb

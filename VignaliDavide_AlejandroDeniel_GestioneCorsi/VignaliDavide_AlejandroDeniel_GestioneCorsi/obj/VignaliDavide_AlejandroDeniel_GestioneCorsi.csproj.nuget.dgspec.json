@@ -1,28 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "E:\\GestioneCorsi\\Gestione-corsi\\VignaliDavide_AlejandroDeniel_GestioneCorsi\\VignaliDavide_AlejandroDeniel_GestioneCorsi\\VignaliDavide_AlejandroDeniel_GestioneCorsi.csproj": {}
+    "C:\\Users\\Deniel\\Desktop\\Gestione Corsi\\VignaliDavide_AlejandroDeniel_GestioneCorsi\\VignaliDavide_AlejandroDeniel_GestioneCorsi\\VignaliDavide_AlejandroDeniel_GestioneCorsi.csproj": {}
   },
   "projects": {
-    "E:\\GestioneCorsi\\Gestione-corsi\\VignaliDavide_AlejandroDeniel_GestioneCorsi\\GestioneCorsi.Library\\GestioneCorsi.Library.csproj": {
+    "C:\\Users\\Deniel\\Desktop\\Gestione Corsi\\VignaliDavide_AlejandroDeniel_GestioneCorsi\\GestioneCorsi.Library\\GestioneCorsi.Library.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\GestioneCorsi\\Gestione-corsi\\VignaliDavide_AlejandroDeniel_GestioneCorsi\\GestioneCorsi.Library\\GestioneCorsi.Library.csproj",
+        "projectUniqueName": "C:\\Users\\Deniel\\Desktop\\Gestione Corsi\\VignaliDavide_AlejandroDeniel_GestioneCorsi\\GestioneCorsi.Library\\GestioneCorsi.Library.csproj",
         "projectName": "GestioneCorsi.Library",
-        "projectPath": "E:\\GestioneCorsi\\Gestione-corsi\\VignaliDavide_AlejandroDeniel_GestioneCorsi\\GestioneCorsi.Library\\GestioneCorsi.Library.csproj",
-        "packagesPath": "C:\\Users\\PC05\\.nuget\\packages\\",
-        "outputPath": "E:\\GestioneCorsi\\Gestione-corsi\\VignaliDavide_AlejandroDeniel_GestioneCorsi\\GestioneCorsi.Library\\obj\\",
+        "projectPath": "C:\\Users\\Deniel\\Desktop\\Gestione Corsi\\VignaliDavide_AlejandroDeniel_GestioneCorsi\\GestioneCorsi.Library\\GestioneCorsi.Library.csproj",
+        "packagesPath": "C:\\Users\\Deniel\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Deniel\\Desktop\\Gestione Corsi\\VignaliDavide_AlejandroDeniel_GestioneCorsi\\GestioneCorsi.Library\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\PC05\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\Deniel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0-windows7.0"
@@ -64,29 +57,22 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.405\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\GestioneCorsi\\Gestione-corsi\\VignaliDavide_AlejandroDeniel_GestioneCorsi\\VignaliDavide_AlejandroDeniel_GestioneCorsi\\VignaliDavide_AlejandroDeniel_GestioneCorsi.csproj": {
+    "C:\\Users\\Deniel\\Desktop\\Gestione Corsi\\VignaliDavide_AlejandroDeniel_GestioneCorsi\\VignaliDavide_AlejandroDeniel_GestioneCorsi\\VignaliDavide_AlejandroDeniel_GestioneCorsi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\GestioneCorsi\\Gestione-corsi\\VignaliDavide_AlejandroDeniel_GestioneCorsi\\VignaliDavide_AlejandroDeniel_GestioneCorsi\\VignaliDavide_AlejandroDeniel_GestioneCorsi.csproj",
+        "projectUniqueName": "C:\\Users\\Deniel\\Desktop\\Gestione Corsi\\VignaliDavide_AlejandroDeniel_GestioneCorsi\\VignaliDavide_AlejandroDeniel_GestioneCorsi\\VignaliDavide_AlejandroDeniel_GestioneCorsi.csproj",
         "projectName": "VignaliDavide_AlejandroDeniel_GestioneCorsi",
-        "projectPath": "E:\\GestioneCorsi\\Gestione-corsi\\VignaliDavide_AlejandroDeniel_GestioneCorsi\\VignaliDavide_AlejandroDeniel_GestioneCorsi\\VignaliDavide_AlejandroDeniel_GestioneCorsi.csproj",
-        "packagesPath": "C:\\Users\\PC05\\.nuget\\packages\\",
-        "outputPath": "E:\\GestioneCorsi\\Gestione-corsi\\VignaliDavide_AlejandroDeniel_GestioneCorsi\\VignaliDavide_AlejandroDeniel_GestioneCorsi\\obj\\",
+        "projectPath": "C:\\Users\\Deniel\\Desktop\\Gestione Corsi\\VignaliDavide_AlejandroDeniel_GestioneCorsi\\VignaliDavide_AlejandroDeniel_GestioneCorsi\\VignaliDavide_AlejandroDeniel_GestioneCorsi.csproj",
+        "packagesPath": "C:\\Users\\Deniel\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Deniel\\Desktop\\Gestione Corsi\\VignaliDavide_AlejandroDeniel_GestioneCorsi\\VignaliDavide_AlejandroDeniel_GestioneCorsi\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\PC05\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\Deniel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0-windows7.0"
@@ -99,8 +85,8 @@
           "net5.0-windows7.0": {
             "targetAlias": "net5.0-windows",
             "projectReferences": {
-              "E:\\GestioneCorsi\\Gestione-corsi\\VignaliDavide_AlejandroDeniel_GestioneCorsi\\GestioneCorsi.Library\\GestioneCorsi.Library.csproj": {
-                "projectPath": "E:\\GestioneCorsi\\Gestione-corsi\\VignaliDavide_AlejandroDeniel_GestioneCorsi\\GestioneCorsi.Library\\GestioneCorsi.Library.csproj"
+              "C:\\Users\\Deniel\\Desktop\\Gestione Corsi\\VignaliDavide_AlejandroDeniel_GestioneCorsi\\GestioneCorsi.Library\\GestioneCorsi.Library.csproj": {
+                "projectPath": "C:\\Users\\Deniel\\Desktop\\Gestione Corsi\\VignaliDavide_AlejandroDeniel_GestioneCorsi\\GestioneCorsi.Library\\GestioneCorsi.Library.csproj"
               }
             }
           }
@@ -124,12 +110,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[5.0.12, 5.0.12]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
@@ -138,7 +118,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.405\\RuntimeIdentifierGraph.json"
         }
       }
     }
