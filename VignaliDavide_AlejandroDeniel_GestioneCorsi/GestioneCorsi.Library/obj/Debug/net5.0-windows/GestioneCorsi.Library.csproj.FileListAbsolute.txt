@@ -34,3 +34,15 @@ C:\Users\Deniel\Desktop\Gestione Corsi\VignaliDavide_AlejandroDeniel_GestioneCor
 C:\Users\Deniel\Desktop\Gestione Corsi\VignaliDavide_AlejandroDeniel_GestioneCorsi\GestioneCorsi.Library\obj\Debug\net5.0-windows\GestioneCorsi.Library.dll
 C:\Users\Deniel\Desktop\Gestione Corsi\VignaliDavide_AlejandroDeniel_GestioneCorsi\GestioneCorsi.Library\obj\Debug\net5.0-windows\ref\GestioneCorsi.Library.dll
 C:\Users\Deniel\Desktop\Gestione Corsi\VignaliDavide_AlejandroDeniel_GestioneCorsi\GestioneCorsi.Library\obj\Debug\net5.0-windows\GestioneCorsi.Library.pdb
+C:\Users\Davide\Documents\GitHub\VignaliDavide_AlejandroDeniel_GestioneCorsi\GestioneCorsi.Library\bin\Debug\net5.0-windows\GestioneCorsi.Library.deps.json
+C:\Users\Davide\Documents\GitHub\VignaliDavide_AlejandroDeniel_GestioneCorsi\GestioneCorsi.Library\bin\Debug\net5.0-windows\GestioneCorsi.Library.dll
+C:\Users\Davide\Documents\GitHub\VignaliDavide_AlejandroDeniel_GestioneCorsi\GestioneCorsi.Library\bin\Debug\net5.0-windows\ref\GestioneCorsi.Library.dll
+C:\Users\Davide\Documents\GitHub\VignaliDavide_AlejandroDeniel_GestioneCorsi\GestioneCorsi.Library\bin\Debug\net5.0-windows\GestioneCorsi.Library.pdb
+C:\Users\Davide\Documents\GitHub\VignaliDavide_AlejandroDeniel_GestioneCorsi\GestioneCorsi.Library\obj\Debug\net5.0-windows\GestioneCorsi.Library.csproj.AssemblyReference.cache
+C:\Users\Davide\Documents\GitHub\VignaliDavide_AlejandroDeniel_GestioneCorsi\GestioneCorsi.Library\obj\Debug\net5.0-windows\GestioneCorsi.Library.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Davide\Documents\GitHub\VignaliDavide_AlejandroDeniel_GestioneCorsi\GestioneCorsi.Library\obj\Debug\net5.0-windows\GestioneCorsi.Library.AssemblyInfoInputs.cache
+C:\Users\Davide\Documents\GitHub\VignaliDavide_AlejandroDeniel_GestioneCorsi\GestioneCorsi.Library\obj\Debug\net5.0-windows\GestioneCorsi.Library.AssemblyInfo.cs
+C:\Users\Davide\Documents\GitHub\VignaliDavide_AlejandroDeniel_GestioneCorsi\GestioneCorsi.Library\obj\Debug\net5.0-windows\GestioneCorsi.Library.csproj.CoreCompileInputs.cache
+C:\Users\Davide\Documents\GitHub\VignaliDavide_AlejandroDeniel_GestioneCorsi\GestioneCorsi.Library\obj\Debug\net5.0-windows\GestioneCorsi.Library.dll
+C:\Users\Davide\Documents\GitHub\VignaliDavide_AlejandroDeniel_GestioneCorsi\GestioneCorsi.Library\obj\Debug\net5.0-windows\ref\GestioneCorsi.Library.dll
+C:\Users\Davide\Documents\GitHub\VignaliDavide_AlejandroDeniel_GestioneCorsi\GestioneCorsi.Library\obj\Debug\net5.0-windows\GestioneCorsi.Library.pdb
