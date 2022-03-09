@@ -46,3 +46,5 @@ C:\Users\Davide\Documents\GitHub\VignaliDavide_AlejandroDeniel_GestioneCorsi\Ges
 C:\Users\Davide\Documents\GitHub\VignaliDavide_AlejandroDeniel_GestioneCorsi\GestioneCorsi.Library\obj\Debug\net5.0-windows\GestioneCorsi.Library.dll
 C:\Users\Davide\Documents\GitHub\VignaliDavide_AlejandroDeniel_GestioneCorsi\GestioneCorsi.Library\obj\Debug\net5.0-windows\ref\GestioneCorsi.Library.dll
 C:\Users\Davide\Documents\GitHub\VignaliDavide_AlejandroDeniel_GestioneCorsi\GestioneCorsi.Library\obj\Debug\net5.0-windows\GestioneCorsi.Library.pdb
+C:\Users\Deniel\Desktop\Gestione Corsi\VignaliDavide_AlejandroDeniel_GestioneCorsi\GestioneCorsi.Library\obj\Debug\net5.0-windows\GestioneCorsi.Library.FrmAggiungiCorso.resources
+C:\Users\Deniel\Desktop\Gestione Corsi\VignaliDavide_AlejandroDeniel_GestioneCorsi\GestioneCorsi.Library\obj\Debug\net5.0-windows\GestioneCorsi.Library.csproj.GenerateResource.cache

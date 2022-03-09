@@ -11,12 +11,14 @@ namespace GestioneCorsi.Library
         public List<Corso> Corsi { get; }
         public List<Studente> Studenti { get; }
         public List<Docente> Docenti { get; }
+        public List<Lezione> Lezioni { get; }
 
         public Gestione()
         {
             Corsi = new List<Corso>();
             Studenti = new List<Studente>();
             Docenti = new List<Docente>();
+            Lezioni = new List<Lezione>();
         }
 
         public void AggiungiCorso(Corso corso) => Corsi.Add(corso);

@@ -29,74 +29,75 @@ namespace VignaliDavide_AlejandroDeniel_GestioneCorsi
         /// </summary>
         private void InitializeComponent()
         {
-            this.lblAggiungiDocente = new System.Windows.Forms.Label();
-            this.lblNome = new System.Windows.Forms.Label();
+            this.AggiungiDocente = new System.Windows.Forms.Label();
+            this.Nome = new System.Windows.Forms.Label();
             this.txtBoxNome = new System.Windows.Forms.TextBox();
             this.txtBoxCognome = new System.Windows.Forms.TextBox();
-            this.lblCognome = new System.Windows.Forms.Label();
-            this.lblTitoloStudio = new System.Windows.Forms.Label();
+            this.Cognome = new System.Windows.Forms.Label();
+            this.TitoloStudio = new System.Windows.Forms.Label();
             this.cmbBoxTitoloStudio = new System.Windows.Forms.ComboBox();
             this.btnAggiungiDocente = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // lblAggiungiDocente
+            // AggiungiDocente
             // 
-            this.lblAggiungiDocente.AutoSize = true;
-            this.lblAggiungiDocente.Font = new System.Drawing.Font("Arial", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblAggiungiDocente.Location = new System.Drawing.Point(12, 9);
-            this.lblAggiungiDocente.Name = "lblAggiungiDocente";
-            this.lblAggiungiDocente.Size = new System.Drawing.Size(322, 45);
-            this.lblAggiungiDocente.TabIndex = 0;
-            this.lblAggiungiDocente.Text = "Aggiungi docente";
+            this.AggiungiDocente.AutoSize = true;
+            this.AggiungiDocente.Font = new System.Drawing.Font("Arial", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.AggiungiDocente.Location = new System.Drawing.Point(12, 9);
+            this.AggiungiDocente.Name = "AggiungiDocente";
+            this.AggiungiDocente.Size = new System.Drawing.Size(322, 45);
+            this.AggiungiDocente.TabIndex = 0;
+            this.AggiungiDocente.Text = "Aggiungi docente";
             // 
-            // lblNome
+            // Nome
             // 
-            this.lblNome.AutoSize = true;
-            this.lblNome.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblNome.Location = new System.Drawing.Point(59, 90);
-            this.lblNome.Name = "lblNome";
-            this.lblNome.Size = new System.Drawing.Size(67, 23);
-            this.lblNome.TabIndex = 1;
-            this.lblNome.Text = "Nome:";
+            this.Nome.AutoSize = true;
+            this.Nome.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Nome.Location = new System.Drawing.Point(59, 90);
+            this.Nome.Name = "Nome";
+            this.Nome.Size = new System.Drawing.Size(67, 23);
+            this.Nome.TabIndex = 1;
+            this.Nome.Text = "Nome:";
             // 
             // txtBoxNome
             // 
             this.txtBoxNome.Location = new System.Drawing.Point(214, 90);
             this.txtBoxNome.Name = "txtBoxNome";
             this.txtBoxNome.Size = new System.Drawing.Size(157, 25);
-            this.txtBoxNome.TabIndex = 2;
+            this.txtBoxNome.TabIndex = 1;
             // 
             // txtBoxCognome
             // 
             this.txtBoxCognome.Location = new System.Drawing.Point(214, 172);
             this.txtBoxCognome.Name = "txtBoxCognome";
             this.txtBoxCognome.Size = new System.Drawing.Size(157, 25);
-            this.txtBoxCognome.TabIndex = 4;
+            this.txtBoxCognome.TabIndex = 2;
             // 
-            // lblCognome
+            // Cognome
             // 
-            this.lblCognome.AutoSize = true;
-            this.lblCognome.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblCognome.Location = new System.Drawing.Point(59, 172);
-            this.lblCognome.Name = "lblCognome";
-            this.lblCognome.Size = new System.Drawing.Size(100, 23);
-            this.lblCognome.TabIndex = 3;
-            this.lblCognome.Text = "Cognome:";
+            this.Cognome.AutoSize = true;
+            this.Cognome.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Cognome.Location = new System.Drawing.Point(59, 172);
+            this.Cognome.Name = "Cognome";
+            this.Cognome.Size = new System.Drawing.Size(100, 23);
+            this.Cognome.TabIndex = 3;
+            this.Cognome.Text = "Cognome:";
             // 
-            // lblTitoloStudio
+            // TitoloStudio
             // 
-            this.lblTitoloStudio.AutoSize = true;
-            this.lblTitoloStudio.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblTitoloStudio.Location = new System.Drawing.Point(59, 260);
-            this.lblTitoloStudio.Name = "lblTitoloStudio";
-            this.lblTitoloStudio.Size = new System.Drawing.Size(142, 23);
-            this.lblTitoloStudio.TabIndex = 5;
-            this.lblTitoloStudio.Text = "Titolo di studio:";
+            this.TitoloStudio.AutoSize = true;
+            this.TitoloStudio.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TitoloStudio.Location = new System.Drawing.Point(59, 260);
+            this.TitoloStudio.Name = "TitoloStudio";
+            this.TitoloStudio.Size = new System.Drawing.Size(142, 23);
+            this.TitoloStudio.TabIndex = 5;
+            this.TitoloStudio.Text = "Titolo di studio:";
             // 
             // cmbBoxTitoloStudio
             // 
             this.cmbBoxTitoloStudio.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbBoxTitoloStudio.FormattingEnabled = true;
+            this.cmbBoxTitoloStudio.ItemHeight = 17;
             this.cmbBoxTitoloStudio.Items.AddRange(new object[] {
             "Informatica",
             "Web Design",
@@ -106,14 +107,14 @@ namespace VignaliDavide_AlejandroDeniel_GestioneCorsi
             this.cmbBoxTitoloStudio.Location = new System.Drawing.Point(214, 260);
             this.cmbBoxTitoloStudio.Name = "cmbBoxTitoloStudio";
             this.cmbBoxTitoloStudio.Size = new System.Drawing.Size(157, 25);
-            this.cmbBoxTitoloStudio.TabIndex = 6;
+            this.cmbBoxTitoloStudio.TabIndex = 3;
             // 
             // btnAggiungiDocente
             // 
             this.btnAggiungiDocente.Location = new System.Drawing.Point(165, 317);
             this.btnAggiungiDocente.Name = "btnAggiungiDocente";
             this.btnAggiungiDocente.Size = new System.Drawing.Size(94, 29);
-            this.btnAggiungiDocente.TabIndex = 7;
+            this.btnAggiungiDocente.TabIndex = 4;
             this.btnAggiungiDocente.Text = "Aggiungi";
             this.btnAggiungiDocente.UseVisualStyleBackColor = true;
             this.btnAggiungiDocente.Click += new System.EventHandler(this.btnAggiungiDocente_Click);
@@ -125,18 +126,18 @@ namespace VignaliDavide_AlejandroDeniel_GestioneCorsi
             this.ClientSize = new System.Drawing.Size(430, 358);
             this.Controls.Add(this.btnAggiungiDocente);
             this.Controls.Add(this.cmbBoxTitoloStudio);
-            this.Controls.Add(this.lblTitoloStudio);
+            this.Controls.Add(this.TitoloStudio);
             this.Controls.Add(this.txtBoxCognome);
-            this.Controls.Add(this.lblCognome);
+            this.Controls.Add(this.Cognome);
             this.Controls.Add(this.txtBoxNome);
-            this.Controls.Add(this.lblNome);
-            this.Controls.Add(this.lblAggiungiDocente);
+            this.Controls.Add(this.Nome);
+            this.Controls.Add(this.AggiungiDocente);
             this.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "FrmAggiungiDocente";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FrmAggiungiDocente";
+            this.Text = "Aggiungi docente";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -144,12 +145,12 @@ namespace VignaliDavide_AlejandroDeniel_GestioneCorsi
 
         #endregion
 
-        private System.Windows.Forms.Label lblAggiungiDocente;
-        private System.Windows.Forms.Label lblNome;
+        private System.Windows.Forms.Label AggiungiDocente;
+        private System.Windows.Forms.Label Nome;
         private System.Windows.Forms.TextBox txtBoxNome;
         private System.Windows.Forms.TextBox txtBoxCognome;
-        private System.Windows.Forms.Label lblCognome;
-        private System.Windows.Forms.Label lblTitoloStudio;
+        private System.Windows.Forms.Label Cognome;
+        private System.Windows.Forms.Label TitoloStudio;
         private System.Windows.Forms.ComboBox cmbBoxTitoloStudio;
         private System.Windows.Forms.Button btnAggiungiDocente;
     }

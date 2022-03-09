@@ -9,25 +9,28 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using GestioneCorsi.Library;
 
-namespace VignaliDavide_AlejandroDeniel_GestioneCorsi
+namespace GestioneCorsi.Library
 {
-    public partial class FrmAggiungiStudente : Form
+    public partial class FrmAggiungiCorso : Form
     {
         Gestione gestioneCorsi;
-        public FrmAggiungiStudente(Gestione gestione)
+        public FrmAggiungiCorso(Gestione gestione)
         {
             InitializeComponent();
             gestioneCorsi = gestione;
+
+            foreach (Lezione lezioni in gestioneCorsi.Lezioni)
+                ckdLstBoxLezioni.Items.Add(lezioni);
+            ckdLstBoxLezioni.DataSource = null;
+            ckdLstBoxLezioni.DataSource = gestioneCorsi.Lezioni;
         }
 
-        private void btnAggiungiStudente_Click(object sender, EventArgs e)
+        private void btnAggiungiCorso_Click(object sender, EventArgs e)
         {
-            if (txtBoxNome.Text == "" || txtBoxCognome.Text == "" || txtBoxMatricola.Text == "")
+            if (txtBoxNome.Text == "" || txtBoxEdizione.Text == "" || ckdLstBoxLezioni.CheckedItems == null)
                 MessageBox.Show("Per procedere devi compilare tutti i campi.");
             else
             {
-                Studente studente = new Studente(txtBoxNome.Text, txtBoxCognome.Text, txtBoxMatricola.Text);
-                gestioneCorsi.Studenti.Add(studente);
                 Close();
             }
         }
