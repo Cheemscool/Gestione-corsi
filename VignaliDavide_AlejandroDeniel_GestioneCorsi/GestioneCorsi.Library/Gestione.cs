@@ -12,6 +12,7 @@ namespace GestioneCorsi.Library
         public List<Studente> Studenti { get; }
         public List<Docente> Docenti { get; }
         public List<Lezione> Lezioni { get; }
+        public List<Aula> Aule { get; }
 
         public Gestione()
         {
