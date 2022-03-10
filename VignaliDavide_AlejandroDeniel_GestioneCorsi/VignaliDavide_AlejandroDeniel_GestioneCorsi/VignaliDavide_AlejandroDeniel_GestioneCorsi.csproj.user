@@ -16,5 +16,8 @@
     <Compile Update="FrmInfoCorso.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="FrmInfoLezioni.cs">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
 </Project>

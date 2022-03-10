@@ -13,21 +13,21 @@ namespace VignaliDavide_AlejandroDeniel_GestioneCorsi
 {
     public partial class FrmInfoCorso : Form
     {
-        public FrmInfoCorso(List<Lezione> lezioni, List<Studente> studenti, List<Docente> docenti, List<Aula> aule, string nome, int edizione)
+        public FrmInfoCorso(Corso corso)
         {
             InitializeComponent();
-            lblNomeCorso.Text = nome.ToString();
-            lblEdizione.Text = edizione.ToString();
+            lblNomeCorso.Text = corso.Nome.ToString();
+            lblEdizione.Text = corso.Edizione.ToString();
 
             LstLezioni.DataSource = null;
             LstStudenti.DataSource = null;
             LstDocenti.DataSource = null;
             LstAule.DataSource = null;
 
-            LstLezioni.DataSource = lezioni;
-            LstStudenti.DataSource = studenti;
-            LstDocenti.DataSource = docenti;
-            LstAule.DataSource = aule;
+            LstLezioni.DataSource = corso.Lezioni;
+            LstStudenti.DataSource = corso.Studenti;
+            LstDocenti.DataSource = corso.Docenti;
+            LstAule.DataSource = corso.Aule;
         }
     }
 }
