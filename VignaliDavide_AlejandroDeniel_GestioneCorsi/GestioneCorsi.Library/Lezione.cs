@@ -16,11 +16,11 @@ namespace GestioneCorsi.Library
         private List<Studente> Presenti;
         public Aula Aula { get; }
 
-        public Lezione(string materia,string descrizione, DateTime dateInizio, DateTime dateFine, List<Studente> presenti,Docente docente,Aula aula)
+        public Lezione(string materia,string descrizione, DateTime dateFine, List<Studente> presenti,Docente docente,Aula aula)
         {
             Materia = materia;
             Descrizione = descrizione;
-            DateInizio = dateInizio;
+            DateInizio = DateTime.Now;
             DateFine = dateFine;
             Presenti = presenti;
             Docente = docente;
