@@ -18,6 +18,8 @@ namespace VignaliDavide_AlejandroDeniel_GestioneCorsi
         {
             InitializeComponent();
             gestioneCorsi = new Gestione();
+            Docente docente = new Docente("Ilgo", "Dimento", "Web Marketing");
+            gestioneCorsi.Docenti.Add(docente);
         }
 
         private void docenteToolStripMenuItem_Click(object sender, EventArgs e)

@@ -20,6 +20,7 @@ namespace GestioneCorsi.Library
             Studenti = new List<Studente>();
             Docenti = new List<Docente>();
             Lezioni = new List<Lezione>();
+            Aule = new List<Aula>();
         }
 
         public void AggiungiCorso(Corso corso) => Corsi.Add(corso);

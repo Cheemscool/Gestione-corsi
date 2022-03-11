@@ -14,6 +14,7 @@ namespace GestioneCorsi.Library
     public partial class FrmAggiungiCorso : Form
     {
         Gestione gestioneCorsi;
+        int edizione;
         public FrmAggiungiCorso(Gestione gestione)
         {
             InitializeComponent();
@@ -33,9 +34,10 @@ namespace GestioneCorsi.Library
                 ckdLstBoxDocenti.Items.Add(docente);
             ckdLstBoxDocenti.DataSource = null;
             ckdLstBoxDocenti.DataSource = gestioneCorsi.Docenti;
+            ckdLstBoxDocenti.DisplayMember = "Nome" + "Cognome";
 
-            foreach (Aula aula in gestioneCorsi.Aule)
-                ckdLstBoxAule.Items.Add(aula);
+            foreach (Aula aule in gestioneCorsi.Aule)
+                ckdLstBoxAule.Items.Add(aule);
             ckdLstBoxAule.DataSource = null;
             ckdLstBoxAule.DataSource = gestioneCorsi.Aule;
         }
@@ -43,12 +45,17 @@ namespace GestioneCorsi.Library
         private void btnAggiungiCorso_Click(object sender, EventArgs e)
         {
             if (txtBoxNome.Text == "" || txtBoxEdizione.Text == "" || ckdLstBoxLezioni.CheckedItems == null || ckdLstBoxStudenti.CheckedItems == null || ckdLstBoxDocenti.CheckedItems == null || ckdLstBoxAule.CheckedItems == null)
-                MessageBox.Show("Per procedere devi compilare tutti i campi.");
-            else if (txtBoxEdizione.Text != )
-            else
             {
-                Corso corso = new Corso(txtBoxNome.Text, int.Parse(txtBoxEdizione.Text), ckdLstBoxLezioni.CheckedItems, ckdLstBoxStudenti.CheckedItems, ckdLstBoxDocenti.CheckedItems, ckdLstBoxAule.CheckedItems);
-                Close();
+                MessageBox.Show("Per procedere devi compilare tutti i campi.");
+                return;
+            }
+
+            if (!Int32.TryParse(txtBoxEdizione.Text, out edizione))
+            {
+                MessageBox.Show("Devi inserire un numero per l'edizione");
+                //Corso corso = new Corso(txtBoxNome.Text, edizione, ckdLstBoxLezioni.CheckedItems, ckdLstBoxStudenti.CheckedItems, ckdLstBoxDocenti.CheckedItems, ckdLstBoxAule.CheckedItems);
+                //Close();
+                return;
             }
         }
     }
