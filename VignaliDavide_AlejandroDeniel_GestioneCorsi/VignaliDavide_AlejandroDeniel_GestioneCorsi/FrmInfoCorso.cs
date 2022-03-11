@@ -29,5 +29,10 @@ namespace VignaliDavide_AlejandroDeniel_GestioneCorsi
             LstDocenti.DataSource = corso.Docenti;
             LstAule.DataSource = corso.Aule;
         }
+
+        private void FrmInfoCorso_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
