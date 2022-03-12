@@ -36,8 +36,13 @@ namespace VignaliDavide_AlejandroDeniel_GestioneCorsi
 
         private void corsiToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FrmAggiungiCorso frmAggiungiCorso = new FrmAggiungiCorso(gestioneCorsi);
-            frmAggiungiCorso.ShowDialog();
+            if (gestioneCorsi.Aule.Count != 0 && gestioneCorsi.Docenti.Count != 0 && gestioneCorsi.Lezioni.Count != 0 && gestioneCorsi.Studenti.Count != 0)
+            {
+                FrmAggiungiCorso frmAggiungiCorso = new FrmAggiungiCorso(gestioneCorsi);
+                frmAggiungiCorso.ShowDialog();
+            }
+            else
+                MessageBox.Show("Non puoi aggiungere un corso in assenza di lezioni, studenti, docenti e aule.");
         }
     }
 }

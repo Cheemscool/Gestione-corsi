@@ -16,5 +16,10 @@ namespace GestioneCorsi.Library
             Nome = nome;
             Cognome = cognome;
         }
+
+        public string NomeCognome() 
+        {
+            return $"{Nome} {Cognome}";
+        }
     }
 }
