@@ -26,19 +26,19 @@ namespace GestioneCorsi.Library
             ckdLstBoxLezioni.DataSource = gestioneCorsi.Lezioni;
 
             foreach (Studente studenti in gestioneCorsi.Studenti)
-                ckdLstBoxStudenti.Items.Add(studenti);
+                ckdLstBoxStudenti.Items.Add(studenti.NomeCognome());
             ckdLstBoxStudenti.DataSource = null;
             ckdLstBoxStudenti.DataSource = gestioneCorsi.Studenti;
 
             foreach (Docente docente in gestioneCorsi.Docenti)
-                ckdLstBoxDocenti.Items.Add(docente);
+                ckdLstBoxDocenti.Items.Add(docente.NomeCognome());
             ckdLstBoxDocenti.DataSource = null;
             ckdLstBoxDocenti.DataSource = gestioneCorsi.Docenti;
 
             foreach (Aula aule in gestioneCorsi.Aule)
                 ckdLstBoxAule.Items.Add(aule);
             ckdLstBoxAule.DataSource = null;
-            ckdLstBoxAule.DataSource = gestioneCorsi.Aule;
+            ckdLstBoxAule.DataSource = gestioneCorsi.Aule;         
         }
 
         private void btnAggiungiCorso_Click(object sender, EventArgs e)
@@ -54,13 +54,26 @@ namespace GestioneCorsi.Library
                 MessageBox.Show("Devi inserire un numero per l'edizione");
                 return;
             }
-            
-            else
-            {
-                //Corso corso = new Corso(txtBoxNome.Text, edizione, ckdLstBoxLezioni.CheckedItems, ckdLstBoxStudenti.CheckedItems, ckdLstBoxDocenti.CheckedItems, ckdLstBoxAule.CheckedItems);
-                //MessageBox.Show("È stato aggiunto un corso, controlla!");
-                return;
-            }
+
+            List<Lezione> lezioni = new List<Lezione>();
+            foreach (Lezione lezione in ckdLstBoxLezioni.Items)
+                lezioni.Add(lezione);
+
+            List<Studente> studenti = new List<Studente>();
+            foreach (Studente studente in ckdLstBoxStudenti.Items)
+                studenti.Add(studente);
+
+            List<Docente> docenti = new List<Docente>();
+            foreach (Docente docente in ckdLstBoxDocenti.Items)
+                docenti.Add(docente);
+
+            List<Aula> aule = new List<Aula>();
+            foreach (Aula aula in ckdLstBoxAule.Items)
+                aule.Add(aula);
+
+            Corso corso = new Corso(txtBoxNome.Text, edizione, lezioni, studenti, docenti, aule);
+            MessageBox.Show("È stato aggiunto un corso.");
+            return;
         }
     }
 }
