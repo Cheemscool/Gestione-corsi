@@ -18,18 +18,15 @@ namespace VignaliDavide_AlejandroDeniel_GestioneCorsi
         {
             InitializeComponent();
             gestioneCorsi = new Gestione();
+            List<Studente> presenti = new List<Studente>();
+            List<string> risorse = new List<string>();
+
             Docente docente = new Docente("Ilgo", "Dimento", "Web Marketing");
             gestioneCorsi.Docenti.Add(docente);
             Studente studente = new Studente("Vignali", "Davideo", "Matricolato");
             gestioneCorsi.Studenti.Add(studente);
-            lblStudenti.Text += gestioneCorsi.Studenti.Count;
-            lblDocenti.Text += gestioneCorsi.Docenti.Count;
-            lblAule.Text += gestioneCorsi.Aule.Count;
-        }
-        
-        private void FrmGestioneCorsi_Load(object sender, EventArgs e)
-        {
-            
+            Aula aula = new Aula("OB20", 200, risorse);
+            Lezione lezione = new Lezione("Web Marketing", "Una lezione sul web marketin", DateTime.Now, presenti, docente, aula);
         }
 
         private void docenteToolStripMenuItem_Click(object sender, EventArgs e)
@@ -51,7 +48,5 @@ namespace VignaliDavide_AlejandroDeniel_GestioneCorsi
             //if (gestioneCorsi.Aule.Count != 0 && gestioneCorsi.Docenti.Count != 0 && gestioneCorsi.Lezioni.Count != 0 && gestioneCorsi.Studenti.Count != 0)
             //else MessageBox.Show("Non puoi aggiungere un corso in assenza di lezioni, studenti, docenti e aule.");
         }
-
-        
     }
 }
