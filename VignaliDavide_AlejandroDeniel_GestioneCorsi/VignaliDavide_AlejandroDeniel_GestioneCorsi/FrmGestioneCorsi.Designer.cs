@@ -48,6 +48,9 @@ namespace VignaliDavide_AlejandroDeniel_GestioneCorsi
             this.btnAppello = new System.Windows.Forms.Button();
             this.btnMoreLezione = new System.Windows.Forms.Button();
             this.btnMoreCorso = new System.Windows.Forms.Button();
+            this.lblStudenti = new System.Windows.Forms.Label();
+            this.lblDocenti = new System.Windows.Forms.Label();
+            this.lblAule = new System.Windows.Forms.Label();
             this.mnStrp.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -61,7 +64,7 @@ namespace VignaliDavide_AlejandroDeniel_GestioneCorsi
             this.mnStrp.Location = new System.Drawing.Point(0, 0);
             this.mnStrp.Name = "mnStrp";
             this.mnStrp.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
-            this.mnStrp.Size = new System.Drawing.Size(566, 24);
+            this.mnStrp.Size = new System.Drawing.Size(575, 24);
             this.mnStrp.TabIndex = 0;
             this.mnStrp.Text = "Menu";
             // 
@@ -144,7 +147,7 @@ namespace VignaliDavide_AlejandroDeniel_GestioneCorsi
             this.listBoxCorsi.BackColor = System.Drawing.Color.Gainsboro;
             this.listBoxCorsi.FormattingEnabled = true;
             this.listBoxCorsi.ItemHeight = 16;
-            this.listBoxCorsi.Location = new System.Drawing.Point(13, 127);
+            this.listBoxCorsi.Location = new System.Drawing.Point(13, 142);
             this.listBoxCorsi.Name = "listBoxCorsi";
             this.listBoxCorsi.Size = new System.Drawing.Size(250, 356);
             this.listBoxCorsi.TabIndex = 1;
@@ -163,7 +166,7 @@ namespace VignaliDavide_AlejandroDeniel_GestioneCorsi
             // 
             this.Corsi.AutoSize = true;
             this.Corsi.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Corsi.Location = new System.Drawing.Point(13, 101);
+            this.Corsi.Location = new System.Drawing.Point(13, 116);
             this.Corsi.Name = "Corsi";
             this.Corsi.Size = new System.Drawing.Size(41, 16);
             this.Corsi.TabIndex = 4;
@@ -173,7 +176,7 @@ namespace VignaliDavide_AlejandroDeniel_GestioneCorsi
             // 
             this.Lezioni.AutoSize = true;
             this.Lezioni.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Lezioni.Location = new System.Drawing.Point(304, 101);
+            this.Lezioni.Location = new System.Drawing.Point(304, 116);
             this.Lezioni.Name = "Lezioni";
             this.Lezioni.Size = new System.Drawing.Size(52, 16);
             this.Lezioni.TabIndex = 6;
@@ -184,14 +187,14 @@ namespace VignaliDavide_AlejandroDeniel_GestioneCorsi
             this.listBoxLezioni.BackColor = System.Drawing.Color.Gainsboro;
             this.listBoxLezioni.FormattingEnabled = true;
             this.listBoxLezioni.ItemHeight = 16;
-            this.listBoxLezioni.Location = new System.Drawing.Point(304, 127);
+            this.listBoxLezioni.Location = new System.Drawing.Point(304, 142);
             this.listBoxLezioni.Name = "listBoxLezioni";
             this.listBoxLezioni.Size = new System.Drawing.Size(250, 356);
             this.listBoxLezioni.TabIndex = 5;
             // 
             // btnAppello
             // 
-            this.btnAppello.Location = new System.Drawing.Point(433, 99);
+            this.btnAppello.Location = new System.Drawing.Point(433, 114);
             this.btnAppello.Name = "btnAppello";
             this.btnAppello.Size = new System.Drawing.Size(70, 23);
             this.btnAppello.TabIndex = 11;
@@ -200,7 +203,7 @@ namespace VignaliDavide_AlejandroDeniel_GestioneCorsi
             // 
             // btnMoreLezione
             // 
-            this.btnMoreLezione.Location = new System.Drawing.Point(509, 99);
+            this.btnMoreLezione.Location = new System.Drawing.Point(509, 114);
             this.btnMoreLezione.Name = "btnMoreLezione";
             this.btnMoreLezione.Size = new System.Drawing.Size(45, 23);
             this.btnMoreLezione.TabIndex = 12;
@@ -209,18 +212,48 @@ namespace VignaliDavide_AlejandroDeniel_GestioneCorsi
             // 
             // btnMoreCorso
             // 
-            this.btnMoreCorso.Location = new System.Drawing.Point(218, 97);
+            this.btnMoreCorso.Location = new System.Drawing.Point(218, 112);
             this.btnMoreCorso.Name = "btnMoreCorso";
             this.btnMoreCorso.Size = new System.Drawing.Size(45, 23);
             this.btnMoreCorso.TabIndex = 13;
             this.btnMoreCorso.Text = "Info";
             this.btnMoreCorso.UseVisualStyleBackColor = true;
             // 
+            // lblStudenti
+            // 
+            this.lblStudenti.AutoSize = true;
+            this.lblStudenti.Location = new System.Drawing.Point(322, 33);
+            this.lblStudenti.Name = "lblStudenti";
+            this.lblStudenti.Size = new System.Drawing.Size(63, 16);
+            this.lblStudenti.TabIndex = 14;
+            this.lblStudenti.Text = "Studenti: ";
+            // 
+            // lblDocenti
+            // 
+            this.lblDocenti.AutoSize = true;
+            this.lblDocenti.Location = new System.Drawing.Point(322, 59);
+            this.lblDocenti.Name = "lblDocenti";
+            this.lblDocenti.Size = new System.Drawing.Size(59, 16);
+            this.lblDocenti.TabIndex = 15;
+            this.lblDocenti.Text = "Docenti: ";
+            // 
+            // lblAule
+            // 
+            this.lblAule.AutoSize = true;
+            this.lblAule.Location = new System.Drawing.Point(322, 85);
+            this.lblAule.Name = "lblAule";
+            this.lblAule.Size = new System.Drawing.Size(41, 16);
+            this.lblAule.TabIndex = 17;
+            this.lblAule.Text = "Aule: ";
+            // 
             // FrmGestioneCorsi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(566, 497);
+            this.ClientSize = new System.Drawing.Size(575, 510);
+            this.Controls.Add(this.lblAule);
+            this.Controls.Add(this.lblDocenti);
+            this.Controls.Add(this.lblStudenti);
             this.Controls.Add(this.btnMoreCorso);
             this.Controls.Add(this.btnMoreLezione);
             this.Controls.Add(this.btnAppello);
@@ -238,6 +271,7 @@ namespace VignaliDavide_AlejandroDeniel_GestioneCorsi
             this.Name = "FrmGestioneCorsi";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Gestione dei corsi";
+            this.Load += new System.EventHandler(this.FrmGestioneCorsi_Load);
             this.mnStrp.ResumeLayout(false);
             this.mnStrp.PerformLayout();
             this.ResumeLayout(false);
@@ -266,6 +300,9 @@ namespace VignaliDavide_AlejandroDeniel_GestioneCorsi
         private System.Windows.Forms.Button btnMoreCorso;
         private System.Windows.Forms.ToolStripMenuItem docenteToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem studenteToolStripMenuItem;
+        private System.Windows.Forms.Label lblStudenti;
+        private System.Windows.Forms.Label lblDocenti;
+        private System.Windows.Forms.Label lblAule;
     }
 }
 

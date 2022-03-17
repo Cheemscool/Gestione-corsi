@@ -34,7 +34,6 @@ namespace GestioneCorsi.Library
                 ckdLstBoxDocenti.Items.Add(docente);
             ckdLstBoxDocenti.DataSource = null;
             ckdLstBoxDocenti.DataSource = gestioneCorsi.Docenti;
-            ckdLstBoxDocenti.DisplayMember = "Nome" + "Cognome";
 
             foreach (Aula aule in gestioneCorsi.Aule)
                 ckdLstBoxAule.Items.Add(aule);
@@ -53,8 +52,13 @@ namespace GestioneCorsi.Library
             if (!Int32.TryParse(txtBoxEdizione.Text, out edizione))
             {
                 MessageBox.Show("Devi inserire un numero per l'edizione");
+                return;
+            }
+            
+            else
+            {
                 //Corso corso = new Corso(txtBoxNome.Text, edizione, ckdLstBoxLezioni.CheckedItems, ckdLstBoxStudenti.CheckedItems, ckdLstBoxDocenti.CheckedItems, ckdLstBoxAule.CheckedItems);
-                //Close();
+                //MessageBox.Show("È stato aggiunto un corso, controlla!");
                 return;
             }
         }
