@@ -84,35 +84,36 @@ namespace VignaliDavide_AlejandroDeniel_GestioneCorsi
             this.docenteToolStripMenuItem,
             this.studenteToolStripMenuItem});
             this.personeToolStripMenuItem1.Name = "personeToolStripMenuItem1";
-            this.personeToolStripMenuItem1.Size = new System.Drawing.Size(121, 22);
+            this.personeToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.personeToolStripMenuItem1.Text = "Persona";
             // 
             // docenteToolStripMenuItem
             // 
             this.docenteToolStripMenuItem.Name = "docenteToolStripMenuItem";
-            this.docenteToolStripMenuItem.Size = new System.Drawing.Size(123, 22);
+            this.docenteToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.docenteToolStripMenuItem.Text = "Docente";
             this.docenteToolStripMenuItem.Click += new System.EventHandler(this.docenteToolStripMenuItem_Click);
             // 
             // studenteToolStripMenuItem
             // 
             this.studenteToolStripMenuItem.Name = "studenteToolStripMenuItem";
-            this.studenteToolStripMenuItem.Size = new System.Drawing.Size(123, 22);
+            this.studenteToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.studenteToolStripMenuItem.Text = "Studente";
             this.studenteToolStripMenuItem.Click += new System.EventHandler(this.studenteToolStripMenuItem_Click);
             // 
             // corsiToolStripMenuItem
             // 
             this.corsiToolStripMenuItem.Name = "corsiToolStripMenuItem";
-            this.corsiToolStripMenuItem.Size = new System.Drawing.Size(121, 22);
+            this.corsiToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.corsiToolStripMenuItem.Text = "Corso";
             this.corsiToolStripMenuItem.Click += new System.EventHandler(this.corsiToolStripMenuItem_Click);
             // 
             // lezioniToolStripMenuItem
             // 
             this.lezioniToolStripMenuItem.Name = "lezioniToolStripMenuItem";
-            this.lezioniToolStripMenuItem.Size = new System.Drawing.Size(121, 22);
+            this.lezioniToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.lezioniToolStripMenuItem.Text = "Lezione";
+            this.lezioniToolStripMenuItem.Click += new System.EventHandler(this.lezioniToolStripMenuItem_Click);
             // 
             // eliminaToolStripMenuItem
             // 

@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "1ZpMQI0xwgLpmLgu5mmXHd4mg5jMjJVb/FqDSsJFrBSbzButMTFhszidIppyTtAtZCsIigNyDXPH9cz+V2l3/g==",
+  "dgSpecHash": "3/ieOnhfYWVhGhdjiJsSIrfULwthtSMFDUEYeFhh1yCpygEndBlxOGJ+joY9v2cvu4y2G/3QWKGcK8j2dWBDHg==",
   "success": true,
-  "projectFilePath": "E:\\GestioneCorsi\\Gestione-corsi\\VignaliDavide_AlejandroDeniel_GestioneCorsi\\VignaliDavide_AlejandroDeniel_GestioneCorsi\\VignaliDavide_AlejandroDeniel_GestioneCorsi.csproj",
+  "projectFilePath": "C:\\Users\\PC05\\Documents\\github\\Gestione-corsi\\VignaliDavide_AlejandroDeniel_GestioneCorsi\\VignaliDavide_AlejandroDeniel_GestioneCorsi\\VignaliDavide_AlejandroDeniel_GestioneCorsi.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\PC05\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.12\\microsoft.netcore.app.host.win-x64.5.0.12.nupkg.sha512"
+    "C:\\Users\\PC05\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.13\\microsoft.netcore.app.host.win-x64.5.0.13.nupkg.sha512"
   ],
   "logs": []
 }

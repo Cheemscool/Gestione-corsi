@@ -33,10 +33,17 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
+            this.CmbCorso = new System.Windows.Forms.ComboBox();
+            this.ChcPresenti = new System.Windows.Forms.CheckedListBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.CmbMateria = new System.Windows.Forms.ComboBox();
+            this.TxtDescrizione = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.DttFine = new System.Windows.Forms.DateTimePicker();
+            this.label7 = new System.Windows.Forms.Label();
+            this.CmbDocente = new System.Windows.Forms.ComboBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.CmbAule = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // label1
@@ -52,12 +59,13 @@
             // BtnAggiungi
             // 
             this.BtnAggiungi.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.BtnAggiungi.Location = new System.Drawing.Point(564, 108);
+            this.BtnAggiungi.Location = new System.Drawing.Point(680, 12);
             this.BtnAggiungi.Name = "BtnAggiungi";
             this.BtnAggiungi.Size = new System.Drawing.Size(108, 75);
             this.BtnAggiungi.TabIndex = 1;
             this.BtnAggiungi.Text = "Aggiungi";
             this.BtnAggiungi.UseVisualStyleBackColor = true;
+            this.BtnAggiungi.Click += new System.EventHandler(this.BtnAggiungi_Click);
             // 
             // label2
             // 
@@ -83,28 +91,29 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(353, 216);
+            this.label4.Location = new System.Drawing.Point(246, 89);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(75, 18);
             this.label4.TabIndex = 4;
             this.label4.Text = "Data fine:";
             // 
-            // comboBox1
+            // CmbCorso
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(101, 86);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 26);
-            this.comboBox1.TabIndex = 5;
+            this.CmbCorso.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.CmbCorso.FormattingEnabled = true;
+            this.CmbCorso.Location = new System.Drawing.Point(101, 86);
+            this.CmbCorso.Name = "CmbCorso";
+            this.CmbCorso.Size = new System.Drawing.Size(121, 26);
+            this.CmbCorso.TabIndex = 5;
+            this.CmbCorso.SelectedIndexChanged += new System.EventHandler(this.CmbCorso_SelectedIndexChanged);
             // 
-            // checkedListBox1
+            // ChcPresenti
             // 
-            this.checkedListBox1.FormattingEnabled = true;
-            this.checkedListBox1.Location = new System.Drawing.Point(316, 288);
-            this.checkedListBox1.Name = "checkedListBox1";
-            this.checkedListBox1.Size = new System.Drawing.Size(120, 94);
-            this.checkedListBox1.TabIndex = 6;
+            this.ChcPresenti.FormattingEnabled = true;
+            this.ChcPresenti.Location = new System.Drawing.Point(251, 186);
+            this.ChcPresenti.Name = "ChcPresenti";
+            this.ChcPresenti.Size = new System.Drawing.Size(265, 256);
+            this.ChcPresenti.TabIndex = 6;
             // 
             // label5
             // 
@@ -116,24 +125,112 @@
             this.label5.TabIndex = 7;
             this.label5.Text = "Corso:";
             // 
-            // comboBox2
+            // CmbMateria
             // 
-            this.comboBox2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(101, 125);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 26);
-            this.comboBox2.TabIndex = 8;
+            this.CmbMateria.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.CmbMateria.FormattingEnabled = true;
+            this.CmbMateria.Items.AddRange(new object[] {
+            "Informatica",
+            "Web Designer",
+            "Progettazione",
+            "Musica",
+            "Marketing"});
+            this.CmbMateria.Location = new System.Drawing.Point(101, 125);
+            this.CmbMateria.Name = "CmbMateria";
+            this.CmbMateria.Size = new System.Drawing.Size(121, 26);
+            this.CmbMateria.TabIndex = 8;
+            // 
+            // TxtDescrizione
+            // 
+            this.TxtDescrizione.Location = new System.Drawing.Point(12, 186);
+            this.TxtDescrizione.Multiline = true;
+            this.TxtDescrizione.Name = "TxtDescrizione";
+            this.TxtDescrizione.Size = new System.Drawing.Size(210, 256);
+            this.TxtDescrizione.TabIndex = 9;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label6.Location = new System.Drawing.Point(251, 165);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(70, 18);
+            this.label6.TabIndex = 10;
+            this.label6.Text = "Presenti:";
+            // 
+            // DttFine
+            // 
+            this.DttFine.Location = new System.Drawing.Point(327, 86);
+            this.DttFine.Name = "DttFine";
+            this.DttFine.Size = new System.Drawing.Size(189, 23);
+            this.DttFine.TabIndex = 11;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label7.Location = new System.Drawing.Point(246, 128);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(66, 18);
+            this.label7.TabIndex = 12;
+            this.label7.Text = "Docenti:";
+            // 
+            // CmbDocente
+            // 
+            this.CmbDocente.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.CmbDocente.FormattingEnabled = true;
+            this.CmbDocente.Items.AddRange(new object[] {
+            "Informatica",
+            "Web Designer",
+            "Progettazione",
+            "Musica",
+            "Marketing"});
+            this.CmbDocente.Location = new System.Drawing.Point(327, 125);
+            this.CmbDocente.Name = "CmbDocente";
+            this.CmbDocente.Size = new System.Drawing.Size(189, 26);
+            this.CmbDocente.TabIndex = 13;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label8.Location = new System.Drawing.Point(522, 382);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(43, 18);
+            this.label8.TabIndex = 14;
+            this.label8.Text = "Aula:";
+            // 
+            // CmbAule
+            // 
+            this.CmbAule.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.CmbAule.FormattingEnabled = true;
+            this.CmbAule.Items.AddRange(new object[] {
+            "Informatica",
+            "Web Designer",
+            "Progettazione",
+            "Musica",
+            "Marketing"});
+            this.CmbAule.Location = new System.Drawing.Point(522, 412);
+            this.CmbAule.Name = "CmbAule";
+            this.CmbAule.Size = new System.Drawing.Size(266, 26);
+            this.CmbAule.TabIndex = 15;
             // 
             // FrmAggiungiLezione
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.CmbAule);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.CmbDocente);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.DttFine);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.TxtDescrizione);
+            this.Controls.Add(this.CmbMateria);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.checkedListBox1);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.ChcPresenti);
+            this.Controls.Add(this.CmbCorso);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -153,9 +250,16 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.CheckedListBox checkedListBox1;
+        private System.Windows.Forms.ComboBox CmbCorso;
+        private System.Windows.Forms.CheckedListBox ChcPresenti;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox CmbMateria;
+        private System.Windows.Forms.TextBox TxtDescrizione;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.DateTimePicker DttFine;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.ComboBox CmbDocente;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.ComboBox CmbAule;
     }
 }
