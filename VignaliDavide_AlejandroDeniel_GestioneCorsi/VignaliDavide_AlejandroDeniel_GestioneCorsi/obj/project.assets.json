@@ -35,11 +35,19 @@
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< Updated upstream
       "projectUniqueName": "C:\\Users\\Davide\\Documents\\GitHub\\VignaliDavide_AlejandroDeniel_GestioneCorsi\\VignaliDavide_AlejandroDeniel_GestioneCorsi\\VignaliDavide_AlejandroDeniel_GestioneCorsi.csproj",
       "projectName": "VignaliDavide_AlejandroDeniel_GestioneCorsi",
       "projectPath": "C:\\Users\\Davide\\Documents\\GitHub\\VignaliDavide_AlejandroDeniel_GestioneCorsi\\VignaliDavide_AlejandroDeniel_GestioneCorsi\\VignaliDavide_AlejandroDeniel_GestioneCorsi.csproj",
       "packagesPath": "C:\\Users\\Davide\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Davide\\Documents\\GitHub\\VignaliDavide_AlejandroDeniel_GestioneCorsi\\VignaliDavide_AlejandroDeniel_GestioneCorsi\\obj\\",
+=======
+      "projectUniqueName": "E:\\GestioneCorsi\\Gestione-corsi\\VignaliDavide_AlejandroDeniel_GestioneCorsi\\VignaliDavide_AlejandroDeniel_GestioneCorsi\\VignaliDavide_AlejandroDeniel_GestioneCorsi.csproj",
+      "projectName": "VignaliDavide_AlejandroDeniel_GestioneCorsi",
+      "projectPath": "E:\\GestioneCorsi\\Gestione-corsi\\VignaliDavide_AlejandroDeniel_GestioneCorsi\\VignaliDavide_AlejandroDeniel_GestioneCorsi\\VignaliDavide_AlejandroDeniel_GestioneCorsi.csproj",
+      "packagesPath": "C:\\Users\\PC05\\.nuget\\packages\\",
+      "outputPath": "E:\\GestioneCorsi\\Gestione-corsi\\VignaliDavide_AlejandroDeniel_GestioneCorsi\\VignaliDavide_AlejandroDeniel_GestioneCorsi\\obj\\",
+>>>>>>> Stashed changes
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Davide\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -56,8 +64,13 @@
         "net5.0-windows7.0": {
           "targetAlias": "net5.0-windows",
           "projectReferences": {
+<<<<<<< Updated upstream
             "C:\\Users\\Davide\\Documents\\GitHub\\VignaliDavide_AlejandroDeniel_GestioneCorsi\\GestioneCorsi.Library\\GestioneCorsi.Library.csproj": {
               "projectPath": "C:\\Users\\Davide\\Documents\\GitHub\\VignaliDavide_AlejandroDeniel_GestioneCorsi\\GestioneCorsi.Library\\GestioneCorsi.Library.csproj"
+=======
+            "E:\\GestioneCorsi\\Gestione-corsi\\VignaliDavide_AlejandroDeniel_GestioneCorsi\\GestioneCorsi.Library\\GestioneCorsi.Library.csproj": {
+              "projectPath": "E:\\GestioneCorsi\\Gestione-corsi\\VignaliDavide_AlejandroDeniel_GestioneCorsi\\GestioneCorsi.Library\\GestioneCorsi.Library.csproj"
+>>>>>>> Stashed changes
             }
           }
         }

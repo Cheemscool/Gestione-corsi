@@ -24,21 +24,25 @@ namespace GestioneCorsi.Library
                 ckdLstBoxLezioni.Items.Add(lezioni);
             ckdLstBoxLezioni.DataSource = null;
             ckdLstBoxLezioni.DataSource = gestioneCorsi.Lezioni;
+            ckdLstBoxLezioni.DisplayMember = "Materia";
 
             foreach (Studente studenti in gestioneCorsi.Studenti)
-                ckdLstBoxStudenti.Items.Add(studenti.NomeCognome());
+                ckdLstBoxStudenti.Items.Add(studenti);
             ckdLstBoxStudenti.DataSource = null;
             ckdLstBoxStudenti.DataSource = gestioneCorsi.Studenti;
+            ckdLstBoxStudenti.DisplayMember = "Nome";
 
             foreach (Docente docente in gestioneCorsi.Docenti)
-                ckdLstBoxDocenti.Items.Add(docente.NomeCognome());
+                ckdLstBoxDocenti.Items.Add(docente);
             ckdLstBoxDocenti.DataSource = null;
             ckdLstBoxDocenti.DataSource = gestioneCorsi.Docenti;
+            ckdLstBoxDocenti.DisplayMember = "Nome";
 
             foreach (Aula aule in gestioneCorsi.Aule)
                 ckdLstBoxAule.Items.Add(aule);
             ckdLstBoxAule.DataSource = null;
-            ckdLstBoxAule.DataSource = gestioneCorsi.Aule;         
+            ckdLstBoxAule.DataSource = gestioneCorsi.Aule;
+            ckdLstBoxAule.DisplayMember = "CodiceAula";
         }
 
         private void btnAggiungiCorso_Click(object sender, EventArgs e)
@@ -73,6 +77,7 @@ namespace GestioneCorsi.Library
 
             Corso corso = new Corso(txtBoxNome.Text, edizione, lezioni, studenti, docenti, aule);
             MessageBox.Show("È stato aggiunto un corso.");
+            Close();
             return;
         }
     }

@@ -22,12 +22,16 @@ namespace VignaliDavide_AlejandroDeniel_GestioneCorsi
             gestioneCorsi.Docenti.Add(docente);
             Studente studente = new Studente("Vignali", "Davideo", "Matricolato");
             gestioneCorsi.Studenti.Add(studente);
+<<<<<<< Updated upstream
 
         }
         
         private void FrmGestioneCorsi_Load(object sender, EventArgs e)
         {
             
+=======
+            //Lezione lezione = new Lezione();
+>>>>>>> Stashed changes
         }
 
         private void docenteToolStripMenuItem_Click(object sender, EventArgs e)
@@ -52,7 +56,8 @@ namespace VignaliDavide_AlejandroDeniel_GestioneCorsi
 
         private void lezioniToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FrmAggiungiLezione frm = new FrmAggiungiLezione(gestioneCorsi.Corsi);
+            FrmAggiungiLezione frmAggiungiLezione = new FrmAggiungiLezione(gestioneCorsi.Corsi);
+            frmAggiungiLezione.ShowDialog();
         }
     }
 }

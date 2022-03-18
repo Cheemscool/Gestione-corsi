@@ -13,4 +13,8 @@ build_property.InvariantGlobalization =
 build_property.PlatformNeutralAssembly = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = GestioneCorsi.Library
+<<<<<<< Updated upstream
 build_property.ProjectDir = C:\Users\Davide\Documents\GitHub\VignaliDavide_AlejandroDeniel_GestioneCorsi\GestioneCorsi.Library\
+=======
+build_property.ProjectDir = E:\GestioneCorsi\Gestione-corsi\VignaliDavide_AlejandroDeniel_GestioneCorsi\GestioneCorsi.Library\
+>>>>>>> Stashed changes
