@@ -22,9 +22,7 @@ namespace VignaliDavide_AlejandroDeniel_GestioneCorsi
             gestioneCorsi.Docenti.Add(docente);
             Studente studente = new Studente("Vignali", "Davideo", "Matricolato");
             gestioneCorsi.Studenti.Add(studente);
-            lblStudenti.Text += gestioneCorsi.Studenti.Count;
-            lblDocenti.Text += gestioneCorsi.Docenti.Count;
-            lblAule.Text += gestioneCorsi.Aule.Count;
+
         }
         
         private void FrmGestioneCorsi_Load(object sender, EventArgs e)

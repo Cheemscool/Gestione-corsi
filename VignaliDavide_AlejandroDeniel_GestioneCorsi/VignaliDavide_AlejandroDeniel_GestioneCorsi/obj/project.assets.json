@@ -30,30 +30,20 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\PC05\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
-    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\Davide\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\PC05\\Documents\\github\\Gestione-corsi\\VignaliDavide_AlejandroDeniel_GestioneCorsi\\VignaliDavide_AlejandroDeniel_GestioneCorsi\\VignaliDavide_AlejandroDeniel_GestioneCorsi.csproj",
+      "projectUniqueName": "C:\\Users\\Davide\\Documents\\GitHub\\VignaliDavide_AlejandroDeniel_GestioneCorsi\\VignaliDavide_AlejandroDeniel_GestioneCorsi\\VignaliDavide_AlejandroDeniel_GestioneCorsi.csproj",
       "projectName": "VignaliDavide_AlejandroDeniel_GestioneCorsi",
-      "projectPath": "C:\\Users\\PC05\\Documents\\github\\Gestione-corsi\\VignaliDavide_AlejandroDeniel_GestioneCorsi\\VignaliDavide_AlejandroDeniel_GestioneCorsi\\VignaliDavide_AlejandroDeniel_GestioneCorsi.csproj",
-      "packagesPath": "C:\\Users\\PC05\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\PC05\\Documents\\github\\Gestione-corsi\\VignaliDavide_AlejandroDeniel_GestioneCorsi\\VignaliDavide_AlejandroDeniel_GestioneCorsi\\obj\\",
+      "projectPath": "C:\\Users\\Davide\\Documents\\GitHub\\VignaliDavide_AlejandroDeniel_GestioneCorsi\\VignaliDavide_AlejandroDeniel_GestioneCorsi\\VignaliDavide_AlejandroDeniel_GestioneCorsi.csproj",
+      "packagesPath": "C:\\Users\\Davide\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Davide\\Documents\\GitHub\\VignaliDavide_AlejandroDeniel_GestioneCorsi\\VignaliDavide_AlejandroDeniel_GestioneCorsi\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\PC05\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Users\\Davide\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net5.0-windows7.0"
@@ -66,8 +56,8 @@
         "net5.0-windows7.0": {
           "targetAlias": "net5.0-windows",
           "projectReferences": {
-            "C:\\Users\\PC05\\Documents\\github\\Gestione-corsi\\VignaliDavide_AlejandroDeniel_GestioneCorsi\\GestioneCorsi.Library\\GestioneCorsi.Library.csproj": {
-              "projectPath": "C:\\Users\\PC05\\Documents\\github\\Gestione-corsi\\VignaliDavide_AlejandroDeniel_GestioneCorsi\\GestioneCorsi.Library\\GestioneCorsi.Library.csproj"
+            "C:\\Users\\Davide\\Documents\\GitHub\\VignaliDavide_AlejandroDeniel_GestioneCorsi\\GestioneCorsi.Library\\GestioneCorsi.Library.csproj": {
+              "projectPath": "C:\\Users\\Davide\\Documents\\GitHub\\VignaliDavide_AlejandroDeniel_GestioneCorsi\\GestioneCorsi.Library\\GestioneCorsi.Library.csproj"
             }
           }
         }
@@ -94,7 +84,7 @@
         "downloadDependencies": [
           {
             "name": "Microsoft.NETCore.App.Host.win-x64",
-            "version": "[5.0.13, 5.0.13]"
+            "version": "[5.0.12, 5.0.12]"
           }
         ],
         "frameworkReferences": {
@@ -105,7 +95,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

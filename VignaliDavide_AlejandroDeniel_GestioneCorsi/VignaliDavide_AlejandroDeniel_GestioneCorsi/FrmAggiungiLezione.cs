@@ -43,7 +43,13 @@ namespace VignaliDavide_AlejandroDeniel_GestioneCorsi
 
         private void BtnAggiungi_Click(object sender, EventArgs e)
         {
+            List<Studente> studenti = new List<Studente>();
+            foreach (Studente studente in ChcPresenti.Items)
+                studenti.Add(studente);
 
+            Lezione lezione = new Lezione(CmbMateria.Text, TxtDescrizione.Text, DttFine.Value,studenti,CmbDocente.SelectedItem as Docente,CmbAule.SelectedItem as Aula);
+            Corsi[index].AggiungiLezione(lezione);
+            Close();
         }
     }
 }
