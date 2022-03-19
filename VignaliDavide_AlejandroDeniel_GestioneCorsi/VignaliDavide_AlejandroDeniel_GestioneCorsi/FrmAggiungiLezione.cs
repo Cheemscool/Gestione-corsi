@@ -14,7 +14,7 @@ namespace VignaliDavide_AlejandroDeniel_GestioneCorsi
     public partial class FrmAggiungiLezione : Form
     {
         private List<Corso> Corsi;
-        private int index=0;
+        private int index = 0;
         
         public FrmAggiungiLezione(List<Corso> corsi)
         {
@@ -24,6 +24,7 @@ namespace VignaliDavide_AlejandroDeniel_GestioneCorsi
             DttFine.MinDate = DateTime.Now;
             DttFine.MaxDate = DateTime.Now.AddYears(2);
         }
+
         public void Ricarica()
         {
             ChcPresenti.DataSource = null;
@@ -43,11 +44,15 @@ namespace VignaliDavide_AlejandroDeniel_GestioneCorsi
 
         private void BtnAggiungi_Click(object sender, EventArgs e)
         {
+            if (true)
+            {
+
+            }
             List<Studente> studenti = new List<Studente>();
             foreach (Studente studente in ChcPresenti.Items)
                 studenti.Add(studente);
 
-            Lezione lezione = new Lezione(CmbMateria.Text, TxtDescrizione.Text, DttFine.Value,studenti,CmbDocente.SelectedItem as Docente,CmbAule.SelectedItem as Aula);
+            Lezione lezione = new Lezione(CmbMateria.Text, lblDescrizione.Text, DttFine.Value,studenti,CmbDocente.SelectedItem as Docente,CmbAule.SelectedItem as Aula);
             Corsi[index].AggiungiLezione(lezione);
             Close();
         }

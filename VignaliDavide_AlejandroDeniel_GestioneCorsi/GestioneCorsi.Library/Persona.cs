@@ -16,7 +16,8 @@ namespace GestioneCorsi.Library
             Nome = nome;
             Cognome = cognome;
         }
-        public string NomeCognome()
+
+        public override string ToString()
         {
             return $"{Nome} {Cognome}";
         }

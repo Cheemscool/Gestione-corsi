@@ -82,7 +82,7 @@ namespace VignaliDavide_AlejandroDeniel_GestioneCorsi
                 MessageBox.Show("Non esistono corsi.");
                 return;
             }
-            if (listBoxCorsi.SelectedItems == null)
+            if (listBoxCorsi.SelectedIndex == -1)
             {
                 MessageBox.Show("Non è stato selezionato nessun corso.");
                 return;

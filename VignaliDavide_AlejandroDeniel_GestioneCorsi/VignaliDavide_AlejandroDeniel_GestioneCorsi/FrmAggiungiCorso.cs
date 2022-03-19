@@ -30,13 +30,13 @@ namespace GestioneCorsi.Library
                 ckdLstBoxStudenti.Items.Add(studenti);
             ckdLstBoxStudenti.DataSource = null;
             ckdLstBoxStudenti.DataSource = gestioneCorsi.Studenti;
-            ckdLstBoxStudenti.DisplayMember = "Nome";
+            ckdLstBoxStudenti.DisplayMember = "Nome" + "Cognome";
 
             foreach (Docente docente in gestioneCorsi.Docenti)
                 ckdLstBoxDocenti.Items.Add(docente);
             ckdLstBoxDocenti.DataSource = null;
             ckdLstBoxDocenti.DataSource = gestioneCorsi.Docenti;
-            ckdLstBoxDocenti.DisplayMember = "Nome";
+            ckdLstBoxDocenti.DisplayMember = "Nome" + "Cognome";
 
             foreach (Aula aule in gestioneCorsi.Aule)
                 ckdLstBoxAule.Items.Add(aule);

@@ -1,17 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "1ZpMQI0xwgLpmLgu5mmXHd4mg5jMjJVb/FqDSsJFrBSbzButMTFhszidIppyTtAtZCsIigNyDXPH9cz+V2l3/g==",
+  "dgSpecHash": "rVJJ89Dk0n3k35bWr0khMXcAJyrTDiEVxDXE2H7q2Bs/NWaCbvtiNZVSVlJsRWk+tjBbSU8QM1XYxELlJtGWRA==",
   "success": true,
-  "projectFilePath": "E:\\GestioneCorsi\\Gestione-corsi\\VignaliDavide_AlejandroDeniel_GestioneCorsi\\VignaliDavide_AlejandroDeniel_GestioneCorsi\\VignaliDavide_AlejandroDeniel_GestioneCorsi.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\PC05\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.12\\microsoft.netcore.app.host.win-x64.5.0.12.nupkg.sha512"
-  ],
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Si è verificato un problema durante la lettura del file di cache E:\\GestioneCorsi\\Gestione-corsi\\VignaliDavide_AlejandroDeniel_GestioneCorsi\\VignaliDavide_AlejandroDeniel_GestioneCorsi\\obj\\project.nuget.cache: Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  "projectFilePath": "C:\\Users\\Deniel\\Desktop\\Gestione Corsi\\VignaliDavide_AlejandroDeniel_GestioneCorsi\\VignaliDavide_AlejandroDeniel_GestioneCorsi\\VignaliDavide_AlejandroDeniel_GestioneCorsi.csproj",
+  "expectedPackageFiles": [],
+  "logs": []
 }
