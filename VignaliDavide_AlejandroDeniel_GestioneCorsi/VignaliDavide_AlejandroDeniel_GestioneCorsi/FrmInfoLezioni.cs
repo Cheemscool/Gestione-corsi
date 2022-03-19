@@ -20,8 +20,7 @@ namespace VignaliDavide_AlejandroDeniel_GestioneCorsi
             LblDocente.Text = lezione.Docente.Nome+" "+lezione.Docente.Cognome;
             LblDescrizione.Text = lezione.Descrizione;
             LblAula.Text = lezione.Aula.CodiceAula;
-            LblData.Text = lezione.DateInizio + "" + lezione.DateFine;
-            
+            LblData.Text = lezione.DateInizio + "" + lezione.DateFine;          
         }
     }
 }

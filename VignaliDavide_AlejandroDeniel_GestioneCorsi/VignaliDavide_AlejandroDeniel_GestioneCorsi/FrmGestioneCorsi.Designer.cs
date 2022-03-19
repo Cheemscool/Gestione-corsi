@@ -43,10 +43,6 @@ namespace VignaliDavide_AlejandroDeniel_GestioneCorsi
             this.listBoxCorsi = new System.Windows.Forms.ListBox();
             this.Gestione_Corsi = new System.Windows.Forms.Label();
             this.Corsi = new System.Windows.Forms.Label();
-            this.Lezioni = new System.Windows.Forms.Label();
-            this.listBoxLezioni = new System.Windows.Forms.ListBox();
-            this.btnAppello = new System.Windows.Forms.Button();
-            this.btnMoreLezione = new System.Windows.Forms.Button();
             this.btnMoreCorso = new System.Windows.Forms.Button();
             this.mnStrp.SuspendLayout();
             this.SuspendLayout();
@@ -61,7 +57,7 @@ namespace VignaliDavide_AlejandroDeniel_GestioneCorsi
             this.mnStrp.Location = new System.Drawing.Point(0, 0);
             this.mnStrp.Name = "mnStrp";
             this.mnStrp.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
-            this.mnStrp.Size = new System.Drawing.Size(575, 24);
+            this.mnStrp.Size = new System.Drawing.Size(431, 24);
             this.mnStrp.TabIndex = 0;
             this.mnStrp.Text = "Menu";
             // 
@@ -145,9 +141,9 @@ namespace VignaliDavide_AlejandroDeniel_GestioneCorsi
             this.listBoxCorsi.BackColor = System.Drawing.Color.Gainsboro;
             this.listBoxCorsi.FormattingEnabled = true;
             this.listBoxCorsi.ItemHeight = 16;
-            this.listBoxCorsi.Location = new System.Drawing.Point(13, 142);
+            this.listBoxCorsi.Location = new System.Drawing.Point(64, 142);
             this.listBoxCorsi.Name = "listBoxCorsi";
-            this.listBoxCorsi.Size = new System.Drawing.Size(250, 356);
+            this.listBoxCorsi.Size = new System.Drawing.Size(289, 356);
             this.listBoxCorsi.TabIndex = 1;
             // 
             // Gestione_Corsi
@@ -164,69 +160,28 @@ namespace VignaliDavide_AlejandroDeniel_GestioneCorsi
             // 
             this.Corsi.AutoSize = true;
             this.Corsi.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Corsi.Location = new System.Drawing.Point(13, 116);
+            this.Corsi.Location = new System.Drawing.Point(27, 115);
             this.Corsi.Name = "Corsi";
             this.Corsi.Size = new System.Drawing.Size(41, 16);
             this.Corsi.TabIndex = 4;
             this.Corsi.Text = "Corsi:";
             // 
-            // Lezioni
-            // 
-            this.Lezioni.AutoSize = true;
-            this.Lezioni.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Lezioni.Location = new System.Drawing.Point(304, 116);
-            this.Lezioni.Name = "Lezioni";
-            this.Lezioni.Size = new System.Drawing.Size(52, 16);
-            this.Lezioni.TabIndex = 6;
-            this.Lezioni.Text = "Lezioni:";
-            // 
-            // listBoxLezioni
-            // 
-            this.listBoxLezioni.BackColor = System.Drawing.Color.Gainsboro;
-            this.listBoxLezioni.FormattingEnabled = true;
-            this.listBoxLezioni.ItemHeight = 16;
-            this.listBoxLezioni.Location = new System.Drawing.Point(304, 142);
-            this.listBoxLezioni.Name = "listBoxLezioni";
-            this.listBoxLezioni.Size = new System.Drawing.Size(250, 356);
-            this.listBoxLezioni.TabIndex = 5;
-            // 
-            // btnAppello
-            // 
-            this.btnAppello.Location = new System.Drawing.Point(433, 114);
-            this.btnAppello.Name = "btnAppello";
-            this.btnAppello.Size = new System.Drawing.Size(70, 23);
-            this.btnAppello.TabIndex = 11;
-            this.btnAppello.Text = "Appello";
-            this.btnAppello.UseVisualStyleBackColor = true;
-            // 
-            // btnMoreLezione
-            // 
-            this.btnMoreLezione.Location = new System.Drawing.Point(509, 114);
-            this.btnMoreLezione.Name = "btnMoreLezione";
-            this.btnMoreLezione.Size = new System.Drawing.Size(45, 23);
-            this.btnMoreLezione.TabIndex = 12;
-            this.btnMoreLezione.Text = "Info";
-            this.btnMoreLezione.UseVisualStyleBackColor = true;
-            // 
             // btnMoreCorso
             // 
-            this.btnMoreCorso.Location = new System.Drawing.Point(218, 112);
+            this.btnMoreCorso.Location = new System.Drawing.Point(308, 112);
             this.btnMoreCorso.Name = "btnMoreCorso";
             this.btnMoreCorso.Size = new System.Drawing.Size(45, 23);
             this.btnMoreCorso.TabIndex = 13;
             this.btnMoreCorso.Text = "Info";
             this.btnMoreCorso.UseVisualStyleBackColor = true;
+            this.btnMoreCorso.Click += new System.EventHandler(this.btnMoreCorso_Click);
             // 
             // FrmGestioneCorsi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(575, 510);
+            this.ClientSize = new System.Drawing.Size(431, 510);
             this.Controls.Add(this.btnMoreCorso);
-            this.Controls.Add(this.btnMoreLezione);
-            this.Controls.Add(this.btnAppello);
-            this.Controls.Add(this.Lezioni);
-            this.Controls.Add(this.listBoxLezioni);
             this.Controls.Add(this.Corsi);
             this.Controls.Add(this.Gestione_Corsi);
             this.Controls.Add(this.listBoxCorsi);
@@ -260,10 +215,6 @@ namespace VignaliDavide_AlejandroDeniel_GestioneCorsi
         private System.Windows.Forms.ToolStripMenuItem personeToolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem corsiToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem lezioneToolStripMenuItem;
-        private System.Windows.Forms.Label Lezioni;
-        private System.Windows.Forms.ListBox listBoxLezioni;
-        private System.Windows.Forms.Button btnAppello;
-        private System.Windows.Forms.Button btnMoreLezione;
         private System.Windows.Forms.Button btnMoreCorso;
         private System.Windows.Forms.ToolStripMenuItem docenteToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem studenteToolStripMenuItem;

@@ -167,7 +167,6 @@
             this.Name = "FrmInfoCorso";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Informazioni sul corso";
-            this.Load += new System.EventHandler(this.FrmInfoCorso_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

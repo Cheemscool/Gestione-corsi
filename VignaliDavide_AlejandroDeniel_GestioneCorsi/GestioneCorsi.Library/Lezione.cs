@@ -28,5 +28,10 @@ namespace GestioneCorsi.Library
         }
 
         public void SegnaPresenti(List<Studente> presenti) => Presenti = presenti;
+
+        public override string ToString()
+        {
+            return Materia;
+        }
     }
 }

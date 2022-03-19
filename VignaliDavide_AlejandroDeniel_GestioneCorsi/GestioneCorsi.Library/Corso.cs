@@ -29,5 +29,10 @@ namespace GestioneCorsi.Library
         public void AggiungiStudente(Studente studente) => Studenti.Add(studente);
         public void AggiungiDocente(Docente docente) => Docenti.Add(docente);
         public void AggiungiAula(Aula aula) => Aule.Add(aula);
+
+        public override string ToString()
+        {
+            return Nome;
+        }
     }
 }

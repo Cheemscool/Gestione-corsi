@@ -1,19 +1,6 @@
 {
   "format": 1,
   "restore": {
-<<<<<<< Updated upstream
-    "C:\\Users\\Davide\\Documents\\GitHub\\VignaliDavide_AlejandroDeniel_GestioneCorsi\\VignaliDavide_AlejandroDeniel_GestioneCorsi\\VignaliDavide_AlejandroDeniel_GestioneCorsi.csproj": {}
-  },
-  "projects": {
-    "C:\\Users\\Davide\\Documents\\GitHub\\VignaliDavide_AlejandroDeniel_GestioneCorsi\\GestioneCorsi.Library\\GestioneCorsi.Library.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\Davide\\Documents\\GitHub\\VignaliDavide_AlejandroDeniel_GestioneCorsi\\GestioneCorsi.Library\\GestioneCorsi.Library.csproj",
-        "projectName": "GestioneCorsi.Library",
-        "projectPath": "C:\\Users\\Davide\\Documents\\GitHub\\VignaliDavide_AlejandroDeniel_GestioneCorsi\\GestioneCorsi.Library\\GestioneCorsi.Library.csproj",
-        "packagesPath": "C:\\Users\\Davide\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Davide\\Documents\\GitHub\\VignaliDavide_AlejandroDeniel_GestioneCorsi\\GestioneCorsi.Library\\obj\\",
-=======
     "E:\\GestioneCorsi\\Gestione-corsi\\VignaliDavide_AlejandroDeniel_GestioneCorsi\\VignaliDavide_AlejandroDeniel_GestioneCorsi\\VignaliDavide_AlejandroDeniel_GestioneCorsi.csproj": {}
   },
   "projects": {
@@ -25,11 +12,17 @@
         "projectPath": "E:\\GestioneCorsi\\Gestione-corsi\\VignaliDavide_AlejandroDeniel_GestioneCorsi\\GestioneCorsi.Library\\GestioneCorsi.Library.csproj",
         "packagesPath": "C:\\Users\\PC05\\.nuget\\packages\\",
         "outputPath": "E:\\GestioneCorsi\\Gestione-corsi\\VignaliDavide_AlejandroDeniel_GestioneCorsi\\GestioneCorsi.Library\\obj\\",
->>>>>>> Stashed changes
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Davide\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\PC05\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0-windows7.0"
@@ -75,16 +68,6 @@
         }
       }
     },
-<<<<<<< Updated upstream
-    "C:\\Users\\Davide\\Documents\\GitHub\\VignaliDavide_AlejandroDeniel_GestioneCorsi\\VignaliDavide_AlejandroDeniel_GestioneCorsi\\VignaliDavide_AlejandroDeniel_GestioneCorsi.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\Davide\\Documents\\GitHub\\VignaliDavide_AlejandroDeniel_GestioneCorsi\\VignaliDavide_AlejandroDeniel_GestioneCorsi\\VignaliDavide_AlejandroDeniel_GestioneCorsi.csproj",
-        "projectName": "VignaliDavide_AlejandroDeniel_GestioneCorsi",
-        "projectPath": "C:\\Users\\Davide\\Documents\\GitHub\\VignaliDavide_AlejandroDeniel_GestioneCorsi\\VignaliDavide_AlejandroDeniel_GestioneCorsi\\VignaliDavide_AlejandroDeniel_GestioneCorsi.csproj",
-        "packagesPath": "C:\\Users\\Davide\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Davide\\Documents\\GitHub\\VignaliDavide_AlejandroDeniel_GestioneCorsi\\VignaliDavide_AlejandroDeniel_GestioneCorsi\\obj\\",
-=======
     "E:\\GestioneCorsi\\Gestione-corsi\\VignaliDavide_AlejandroDeniel_GestioneCorsi\\VignaliDavide_AlejandroDeniel_GestioneCorsi\\VignaliDavide_AlejandroDeniel_GestioneCorsi.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -93,11 +76,17 @@
         "projectPath": "E:\\GestioneCorsi\\Gestione-corsi\\VignaliDavide_AlejandroDeniel_GestioneCorsi\\VignaliDavide_AlejandroDeniel_GestioneCorsi\\VignaliDavide_AlejandroDeniel_GestioneCorsi.csproj",
         "packagesPath": "C:\\Users\\PC05\\.nuget\\packages\\",
         "outputPath": "E:\\GestioneCorsi\\Gestione-corsi\\VignaliDavide_AlejandroDeniel_GestioneCorsi\\VignaliDavide_AlejandroDeniel_GestioneCorsi\\obj\\",
->>>>>>> Stashed changes
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Davide\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\PC05\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0-windows7.0"
@@ -110,13 +99,8 @@
           "net5.0-windows7.0": {
             "targetAlias": "net5.0-windows",
             "projectReferences": {
-<<<<<<< Updated upstream
-              "C:\\Users\\Davide\\Documents\\GitHub\\VignaliDavide_AlejandroDeniel_GestioneCorsi\\GestioneCorsi.Library\\GestioneCorsi.Library.csproj": {
-                "projectPath": "C:\\Users\\Davide\\Documents\\GitHub\\VignaliDavide_AlejandroDeniel_GestioneCorsi\\GestioneCorsi.Library\\GestioneCorsi.Library.csproj"
-=======
               "E:\\GestioneCorsi\\Gestione-corsi\\VignaliDavide_AlejandroDeniel_GestioneCorsi\\GestioneCorsi.Library\\GestioneCorsi.Library.csproj": {
                 "projectPath": "E:\\GestioneCorsi\\Gestione-corsi\\VignaliDavide_AlejandroDeniel_GestioneCorsi\\GestioneCorsi.Library\\GestioneCorsi.Library.csproj"
->>>>>>> Stashed changes
               }
             }
           }
