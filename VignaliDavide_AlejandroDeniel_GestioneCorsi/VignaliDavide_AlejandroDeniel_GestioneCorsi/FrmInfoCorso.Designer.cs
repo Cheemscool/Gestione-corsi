@@ -39,6 +39,7 @@
             this.Personale = new System.Windows.Forms.Label();
             this.LezioniInCorso = new System.Windows.Forms.Label();
             this.AuleAttive = new System.Windows.Forms.Label();
+            this.btnMoreLezione = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblNomeCorso
@@ -47,43 +48,43 @@
             this.lblNomeCorso.Font = new System.Drawing.Font("Arial", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblNomeCorso.Location = new System.Drawing.Point(12, 9);
             this.lblNomeCorso.Name = "lblNomeCorso";
-            this.lblNomeCorso.Size = new System.Drawing.Size(0, 55);
+            this.lblNomeCorso.Size = new System.Drawing.Size(0, 67);
             this.lblNomeCorso.TabIndex = 0;
             // 
             // LstStudenti
             // 
             this.LstStudenti.FormattingEnabled = true;
-            this.LstStudenti.ItemHeight = 15;
+            this.LstStudenti.ItemHeight = 17;
             this.LstStudenti.Location = new System.Drawing.Point(12, 138);
             this.LstStudenti.Name = "LstStudenti";
-            this.LstStudenti.Size = new System.Drawing.Size(137, 349);
+            this.LstStudenti.Size = new System.Drawing.Size(137, 344);
             this.LstStudenti.TabIndex = 1;
             // 
             // LstDocenti
             // 
             this.LstDocenti.FormattingEnabled = true;
-            this.LstDocenti.ItemHeight = 15;
+            this.LstDocenti.ItemHeight = 17;
             this.LstDocenti.Location = new System.Drawing.Point(158, 138);
             this.LstDocenti.Name = "LstDocenti";
-            this.LstDocenti.Size = new System.Drawing.Size(137, 349);
+            this.LstDocenti.Size = new System.Drawing.Size(137, 344);
             this.LstDocenti.TabIndex = 2;
             // 
             // LstLezioni
             // 
             this.LstLezioni.FormattingEnabled = true;
-            this.LstLezioni.ItemHeight = 15;
+            this.LstLezioni.ItemHeight = 17;
             this.LstLezioni.Location = new System.Drawing.Point(302, 138);
             this.LstLezioni.Name = "LstLezioni";
-            this.LstLezioni.Size = new System.Drawing.Size(282, 154);
+            this.LstLezioni.Size = new System.Drawing.Size(282, 140);
             this.LstLezioni.TabIndex = 3;
             // 
             // LstAule
             // 
             this.LstAule.FormattingEnabled = true;
-            this.LstAule.ItemHeight = 15;
+            this.LstAule.ItemHeight = 17;
             this.LstAule.Location = new System.Drawing.Point(302, 318);
             this.LstAule.Name = "LstAule";
-            this.LstAule.Size = new System.Drawing.Size(282, 169);
+            this.LstAule.Size = new System.Drawing.Size(282, 157);
             this.LstAule.TabIndex = 4;
             // 
             // Edizione
@@ -92,7 +93,7 @@
             this.Edizione.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Edizione.Location = new System.Drawing.Point(474, 10);
             this.Edizione.Name = "Edizione";
-            this.Edizione.Size = new System.Drawing.Size(95, 24);
+            this.Edizione.Size = new System.Drawing.Size(125, 32);
             this.Edizione.TabIndex = 5;
             this.Edizione.Text = "Edizione:";
             // 
@@ -102,7 +103,7 @@
             this.lblEdizione.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblEdizione.Location = new System.Drawing.Point(501, 54);
             this.lblEdizione.Name = "lblEdizione";
-            this.lblEdizione.Size = new System.Drawing.Size(0, 17);
+            this.lblEdizione.Size = new System.Drawing.Size(0, 23);
             this.lblEdizione.TabIndex = 6;
             // 
             // StudentiIscritti
@@ -111,7 +112,7 @@
             this.StudentiIscritti.Font = new System.Drawing.Font("Arial", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.StudentiIscritti.Location = new System.Drawing.Point(12, 109);
             this.StudentiIscritti.Name = "StudentiIscritti";
-            this.StudentiIscritti.Size = new System.Drawing.Size(107, 17);
+            this.StudentiIscritti.Size = new System.Drawing.Size(137, 22);
             this.StudentiIscritti.TabIndex = 7;
             this.StudentiIscritti.Text = "Studenti iscritti:";
             // 
@@ -121,7 +122,7 @@
             this.Personale.Font = new System.Drawing.Font("Arial", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Personale.Location = new System.Drawing.Point(158, 109);
             this.Personale.Name = "Personale";
-            this.Personale.Size = new System.Drawing.Size(78, 17);
+            this.Personale.Size = new System.Drawing.Size(101, 22);
             this.Personale.TabIndex = 8;
             this.Personale.Text = "Personale:";
             // 
@@ -131,7 +132,7 @@
             this.LezioniInCorso.Font = new System.Drawing.Font("Arial", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.LezioniInCorso.Location = new System.Drawing.Point(302, 109);
             this.LezioniInCorso.Name = "LezioniInCorso";
-            this.LezioniInCorso.Size = new System.Drawing.Size(114, 17);
+            this.LezioniInCorso.Size = new System.Drawing.Size(147, 22);
             this.LezioniInCorso.TabIndex = 9;
             this.LezioniInCorso.Text = "Lezioni in corso:";
             // 
@@ -141,15 +142,26 @@
             this.AuleAttive.Font = new System.Drawing.Font("Arial", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.AuleAttive.Location = new System.Drawing.Point(302, 295);
             this.AuleAttive.Name = "AuleAttive";
-            this.AuleAttive.Size = new System.Drawing.Size(78, 17);
+            this.AuleAttive.Size = new System.Drawing.Size(102, 22);
             this.AuleAttive.TabIndex = 10;
             this.AuleAttive.Text = "Aule attive:";
             // 
+            // btnMoreLezione
+            // 
+            this.btnMoreLezione.Location = new System.Drawing.Point(539, 109);
+            this.btnMoreLezione.Name = "btnMoreLezione";
+            this.btnMoreLezione.Size = new System.Drawing.Size(45, 23);
+            this.btnMoreLezione.TabIndex = 14;
+            this.btnMoreLezione.Text = "Info";
+            this.btnMoreLezione.UseVisualStyleBackColor = true;
+            this.btnMoreLezione.Click += new System.EventHandler(this.btnMoreLezione_Click);
+            // 
             // FrmInfoCorso
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(602, 498);
+            this.Controls.Add(this.btnMoreLezione);
             this.Controls.Add(this.AuleAttive);
             this.Controls.Add(this.LezioniInCorso);
             this.Controls.Add(this.Personale);
@@ -185,5 +197,6 @@
         private System.Windows.Forms.Label Personale;
         private System.Windows.Forms.Label LezioniInCorso;
         private System.Windows.Forms.Label AuleAttive;
+        private System.Windows.Forms.Button btnMoreLezione;
     }
 }

@@ -18,20 +18,20 @@ namespace VignaliDavide_AlejandroDeniel_GestioneCorsi
         {
             InitializeComponent();
             gestioneCorsi = new Gestione();
-            Docente docente = new Docente("Ilgo", "Dimento", "Web Marketing");
+            Docente docente = new Docente("Thomas", "Casali", "Informatica");
             gestioneCorsi.Docenti.Add(docente);
-            Studente studente = new Studente("Vignali", "Davideo", "Matricolato");
+            Studente studente = new Studente("Davide", "VIgnali", "matricola1");
             gestioneCorsi.Studenti.Add(studente);
-            Studente studente2 = new Studente("Alesandjo", "dandiel", "Matricolame");
+            Studente studente2 = new Studente("Deniel", "Alejandro", "matricola2");
             List<Studente> presenti = new List<Studente>();
             presenti.Add(studente);
             presenti.Add(studente2);
             List<string> risorse = new List<string>();
             risorse.Add("computer");
             risorse.Add("laptop");
-            Aula aula = new Aula("codice", 120, risorse);
-            Lezione lezione = new Lezione("Web marketing", "super descrizione", DateTime.Now.AddDays(2), presenti, docente, aula);
-            Lezione lezione2 = new Lezione("web design", "desc", DateTime.Now.AddDays(4), presenti, docente, aula);
+            Aula aula = new Aula("A1234", 120, risorse);
+            Lezione lezione = new Lezione("Informatica", "Poliformismo", DateTime.Now.AddDays(2), presenti, docente, aula);
+            Lezione lezione2 = new Lezione("Sistemi e Reti", "Conversioni", DateTime.Now.AddDays(4), presenti, docente, aula);
             List<Lezione> lezioni = new List<Lezione>();
             lezioni.Add(lezione);
             lezioni.Add(lezione2);
@@ -59,7 +59,7 @@ namespace VignaliDavide_AlejandroDeniel_GestioneCorsi
 
         private void corsiToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (gestioneCorsi.Aule.Count == 0 && gestioneCorsi.Docenti.Count == 0 && gestioneCorsi.Lezioni.Count == 0 && gestioneCorsi.Studenti.Count == 0)
+            if (gestioneCorsi.Aule.Count == 0 || gestioneCorsi.Docenti.Count == 0 || gestioneCorsi.Lezioni.Count == 0 || gestioneCorsi.Studenti.Count == 0)
             {
                 MessageBox.Show("Non sono presenti i requisiti per aggiungere un corso.");
                 return;
@@ -71,8 +71,19 @@ namespace VignaliDavide_AlejandroDeniel_GestioneCorsi
 
         private void lezioniToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            if (gestioneCorsi.Docenti.Count == 0 || gestioneCorsi.Studenti.Count == 0 || gestioneCorsi.Aule.Count == 0)
+            {
+                MessageBox.Show("Non sono presenti i requisiti per aggiungere una lezione.");
+                return;
+            }
             FrmAggiungiLezione frmAggiungiLezione = new FrmAggiungiLezione(gestioneCorsi.Corsi);
             frmAggiungiLezione.ShowDialog();
+        }
+
+        private void aulaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmAggiungiAula frmAggiungiAula = new FrmAggiungiAula(gestioneCorsi);
+            frmAggiungiAula.ShowDialog();
         }
 
         private void btnMoreCorso_Click(object sender, EventArgs e)
@@ -91,6 +102,7 @@ namespace VignaliDavide_AlejandroDeniel_GestioneCorsi
             frmInfoCorso.ShowDialog();
         }
 
+
         public void StampaCorsi()
         {
             int i = 1;
@@ -98,5 +110,6 @@ namespace VignaliDavide_AlejandroDeniel_GestioneCorsi
             foreach (Corso corsi in gestioneCorsi.Corsi)
                 listBoxCorsi.Items.Add($"{i++}. {corsi.ToString()}");
         }
+
     }
 }

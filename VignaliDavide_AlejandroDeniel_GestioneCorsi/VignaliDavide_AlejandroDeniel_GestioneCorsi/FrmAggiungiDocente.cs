@@ -23,13 +23,14 @@ namespace VignaliDavide_AlejandroDeniel_GestioneCorsi
         private void btnAggiungiDocente_Click(object sender, EventArgs e)
         {
             if (txtBoxNome.Text == "" || txtBoxCognome.Text == "" || cmbBoxTitoloStudio.SelectedItem == null)
-                MessageBox.Show("Per procedere devi compilare tutti i campi.");
-            else
             {
-                Docente docente = new Docente(txtBoxNome.Text, txtBoxCognome.Text, cmbBoxTitoloStudio.Text);
-                gestioneCorsi.Docenti.Add(docente);
-                Close();
+                MessageBox.Show("Per procedere devi compilare tutti i campi.");
+                return;
             }
+
+            Docente docente = new Docente(txtBoxNome.Text, txtBoxCognome.Text, cmbBoxTitoloStudio.Text);
+            gestioneCorsi.Docenti.Add(docente);
+            Close();
         }
     }
 }

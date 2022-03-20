@@ -10,7 +10,7 @@ namespace GestioneCorsi.Library
     {
         public string CodiceAula { get; }
         public int Capienza { get; }
-        List<string> Risorse { get; }
+        public List<string> Risorse { get; }
 
         public Aula(string codiceAula, int capienza, List<string> risorse)
         {
@@ -19,6 +19,9 @@ namespace GestioneCorsi.Library
             Risorse = risorse;
         }
 
-        public void AggiungiRisorse(string Risorsa) => Risorse.Add(Risorsa);
+        public override string ToString()
+        {
+            return CodiceAula;
+        }
     }
 }

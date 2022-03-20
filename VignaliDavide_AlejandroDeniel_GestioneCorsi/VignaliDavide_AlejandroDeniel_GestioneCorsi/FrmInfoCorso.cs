@@ -29,5 +29,17 @@ namespace VignaliDavide_AlejandroDeniel_GestioneCorsi
             LstDocenti.DataSource = corso.Docenti;
             LstAule.DataSource = corso.Aule;
         }
+
+        private void btnMoreLezione_Click(object sender, EventArgs e)
+        {
+            if (LstLezioni.SelectedIndex == -1)
+            {
+                MessageBox.Show("Non è stato selezionato nessun corso.");
+                return;
+            }
+
+            FrmInfoLezioni frmInfoLezioni = new FrmInfoLezioni(LstLezioni.SelectedItem as Lezione);
+            frmInfoLezioni.Show();
+        }
     }
 }
