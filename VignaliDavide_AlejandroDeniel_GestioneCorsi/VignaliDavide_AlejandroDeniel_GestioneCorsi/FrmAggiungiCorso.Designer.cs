@@ -192,7 +192,7 @@ namespace GestioneCorsi.Library
             this.Controls.Add(this.AggiungiCorso);
             this.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Name = "FrmAggiungiCorso";
-            this.Text = "Aggiungi corso";
+            this.Text = "6";
             this.ResumeLayout(false);
             this.PerformLayout();
 

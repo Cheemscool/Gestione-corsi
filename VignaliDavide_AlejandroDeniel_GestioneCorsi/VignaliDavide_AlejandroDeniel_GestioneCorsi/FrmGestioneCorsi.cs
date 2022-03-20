@@ -18,31 +18,6 @@ namespace VignaliDavide_AlejandroDeniel_GestioneCorsi
         {
             InitializeComponent();
             gestioneCorsi = new Gestione();
-            Docente docente = new Docente("Thomas", "Casali", "Informatica");
-            gestioneCorsi.Docenti.Add(docente);
-            Studente studente = new Studente("Davide", "VIgnali", "matricola1");
-            gestioneCorsi.Studenti.Add(studente);
-            Studente studente2 = new Studente("Deniel", "Alejandro", "matricola2");
-            List<Studente> presenti = new List<Studente>();
-            presenti.Add(studente);
-            presenti.Add(studente2);
-            List<string> risorse = new List<string>();
-            risorse.Add("computer");
-            risorse.Add("laptop");
-            Aula aula = new Aula("A1234", 120, risorse);
-            Lezione lezione = new Lezione("Informatica", "Poliformismo", DateTime.Now.AddDays(2), presenti, docente, aula);
-            Lezione lezione2 = new Lezione("Sistemi e Reti", "Conversioni", DateTime.Now.AddDays(4), presenti, docente, aula);
-            List<Lezione> lezioni = new List<Lezione>();
-            lezioni.Add(lezione);
-            lezioni.Add(lezione2);
-            List<Docente> docenti = new List<Docente>();
-            docenti.Add(docente);
-            List<Aula> aule = new List<Aula>();
-            aule.Add(aula);
-            Corso corso = new Corso("Corso1", 1, lezioni, presenti, docenti, aule);
-            Corso corso2 = new Corso("Corso2", 2, lezioni, presenti, docenti, aule);
-            listBoxCorsi.Items.Add(corso);
-            listBoxCorsi.Items.Add(corso2);
         }
 
         private void docenteToolStripMenuItem_Click(object sender, EventArgs e)
@@ -76,7 +51,7 @@ namespace VignaliDavide_AlejandroDeniel_GestioneCorsi
                 MessageBox.Show("Non sono presenti i requisiti per aggiungere una lezione.");
                 return;
             }
-            FrmAggiungiLezione frmAggiungiLezione = new FrmAggiungiLezione(gestioneCorsi.Corsi);
+            FrmAggiungiLezione frmAggiungiLezione = new FrmAggiungiLezione(gestioneCorsi);
             frmAggiungiLezione.ShowDialog();
         }
 
@@ -93,23 +68,82 @@ namespace VignaliDavide_AlejandroDeniel_GestioneCorsi
                 MessageBox.Show("Non esistono corsi.");
                 return;
             }
+
             if (listBoxCorsi.SelectedIndex == -1)
             {
                 MessageBox.Show("Non è stato selezionato nessun corso.");
                 return;
             }
+                
             FrmInfoCorso frmInfoCorso = new FrmInfoCorso(listBoxCorsi.SelectedItem as Corso);
             frmInfoCorso.ShowDialog();
         }
 
-
-        public void StampaCorsi()
+        private void eliminaDocenteToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            int i = 1;
-            listBoxCorsi.Items.Clear();
-            foreach (Corso corsi in gestioneCorsi.Corsi)
-                listBoxCorsi.Items.Add($"{i++}. {corsi.ToString()}");
+            if (gestioneCorsi.Docenti.Count == 0)
+            {
+                MessageBox.Show("Non esistono docenti da rimuovere.");
+                return;
+            }
+
+            FrmEliminaDocente frmEliminaDocente = new FrmEliminaDocente(gestioneCorsi);
+            frmEliminaDocente.ShowDialog();
         }
 
+        private void eliminaStudenteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (gestioneCorsi.Studenti.Count == 0)
+            {
+                MessageBox.Show("Non esistono studenti da rimuovere.");
+                return;
+            }
+
+            FrmEliminaStudente frmEliminaStudente = new FrmEliminaStudente(gestioneCorsi);
+            frmEliminaStudente.ShowDialog();
+        }
+
+        private void eliminaAulaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (gestioneCorsi.Aule.Count == 0)
+            {
+                MessageBox.Show("Non esistono aule da rimuovere.");
+                return;
+            }
+
+            FrmEliminaAula frmEliminaAula = new FrmEliminaAula(gestioneCorsi);
+            frmEliminaAula.ShowDialog();
+        }
+
+        private void eiminaLezioneToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (gestioneCorsi.Lezioni.Count == 0)
+            {
+                MessageBox.Show("Non esistono lezioni da rimuovere.");
+                return;
+            }
+
+            FrmEliminaLezione frmEliminaLezione = new(gestioneCorsi);
+            frmEliminaLezione.ShowDialog();
+        }
+
+        private void corsiToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            if (gestioneCorsi.Corsi.Count == 0)
+            {
+                MessageBox.Show("Non esistono corsi da rimuovere.");
+                return;
+            }
+
+            FrmEliminaCorsi frmEliminaCorsi = new FrmEliminaCorsi(gestioneCorsi);
+            frmEliminaCorsi.ShowDialog();
+        }
+        
+        public void StampaCorsi()
+        {
+            listBoxCorsi.Items.Clear();
+            foreach (Corso corso in gestioneCorsi.Corsi)
+                listBoxCorsi.Items.Add(corso);
+        }
     }
 }

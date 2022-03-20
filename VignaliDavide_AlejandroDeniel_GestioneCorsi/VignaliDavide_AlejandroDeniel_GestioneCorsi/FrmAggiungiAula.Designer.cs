@@ -35,7 +35,7 @@ namespace VignaliDavide_AlejandroDeniel_GestioneCorsi
             this.Capienza = new System.Windows.Forms.Label();
             this.txtBoxCodiceAula = new System.Windows.Forms.TextBox();
             this.CodiceAula = new System.Windows.Forms.Label();
-            this.AggiungiDocente = new System.Windows.Forms.Label();
+            this.AggiungiAula = new System.Windows.Forms.Label();
             this.ckdListBoxRisorse = new System.Windows.Forms.CheckedListBox();
             this.btnAggiungiRisorsa = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -94,15 +94,15 @@ namespace VignaliDavide_AlejandroDeniel_GestioneCorsi
             this.CodiceAula.TabIndex = 8;
             this.CodiceAula.Text = "Codice aula:";
             // 
-            // AggiungiDocente
+            // AggiungiAula
             // 
-            this.AggiungiDocente.AutoSize = true;
-            this.AggiungiDocente.Font = new System.Drawing.Font("Arial", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.AggiungiDocente.Location = new System.Drawing.Point(12, 9);
-            this.AggiungiDocente.Name = "AggiungiDocente";
-            this.AggiungiDocente.Size = new System.Drawing.Size(322, 45);
-            this.AggiungiDocente.TabIndex = 6;
-            this.AggiungiDocente.Text = "Aggiungi docente";
+            this.AggiungiAula.AutoSize = true;
+            this.AggiungiAula.Font = new System.Drawing.Font("Arial", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.AggiungiAula.Location = new System.Drawing.Point(12, 9);
+            this.AggiungiAula.Name = "AggiungiAula";
+            this.AggiungiAula.Size = new System.Drawing.Size(255, 45);
+            this.AggiungiAula.TabIndex = 6;
+            this.AggiungiAula.Text = "Aggiungi aula";
             // 
             // ckdListBoxRisorse
             // 
@@ -135,7 +135,7 @@ namespace VignaliDavide_AlejandroDeniel_GestioneCorsi
             this.Controls.Add(this.Capienza);
             this.Controls.Add(this.txtBoxCodiceAula);
             this.Controls.Add(this.CodiceAula);
-            this.Controls.Add(this.AggiungiDocente);
+            this.Controls.Add(this.AggiungiAula);
             this.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
@@ -154,7 +154,7 @@ namespace VignaliDavide_AlejandroDeniel_GestioneCorsi
         private System.Windows.Forms.Label Capienza;
         private System.Windows.Forms.TextBox txtBoxCodiceAula;
         private System.Windows.Forms.Label CodiceAula;
-        private System.Windows.Forms.Label AggiungiDocente;
+        private System.Windows.Forms.Label AggiungiAula;
         private System.Windows.Forms.CheckedListBox ckdListBoxRisorse;
         private System.Windows.Forms.Button btnAggiungiRisorsa;
     }

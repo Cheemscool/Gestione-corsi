@@ -28,224 +28,186 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.BtnAggiungi = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.CmbCorso = new System.Windows.Forms.ComboBox();
-            this.ChcPresenti = new System.Windows.Forms.CheckedListBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.CmbMateria = new System.Windows.Forms.ComboBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.DttFine = new System.Windows.Forms.DateTimePicker();
-            this.label7 = new System.Windows.Forms.Label();
-            this.CmbDocente = new System.Windows.Forms.ComboBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.CmbAule = new System.Windows.Forms.ComboBox();
-            this.lblDescrizione = new System.Windows.Forms.Label();
+            this.AggiungiLezione = new System.Windows.Forms.Label();
+            this.btnAggiungiLezione = new System.Windows.Forms.Button();
+            this.Aula = new System.Windows.Forms.Label();
+            this.Descrizione = new System.Windows.Forms.Label();
+            this.DataFine = new System.Windows.Forms.Label();
+            this.ckdLstBoxPresenti = new System.Windows.Forms.CheckedListBox();
+            this.cmbBoxAula = new System.Windows.Forms.ComboBox();
+            this.Presenti = new System.Windows.Forms.Label();
+            this.dttFine = new System.Windows.Forms.DateTimePicker();
+            this.Docente = new System.Windows.Forms.Label();
+            this.cmbBoxDocente = new System.Windows.Forms.ComboBox();
+            this.txtBoxDescrizione = new System.Windows.Forms.TextBox();
+            this.cmbBoxMateria = new System.Windows.Forms.ComboBox();
+            this.Materia = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // label1
+            // AggiungiLezione
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(14, 12);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(335, 54);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Creazione lezione";
+            this.AggiungiLezione.AutoSize = true;
+            this.AggiungiLezione.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.AggiungiLezione.Location = new System.Drawing.Point(14, 10);
+            this.AggiungiLezione.Name = "AggiungiLezione";
+            this.AggiungiLezione.Size = new System.Drawing.Size(324, 54);
+            this.AggiungiLezione.TabIndex = 0;
+            this.AggiungiLezione.Text = "Aggiungi lezione";
             // 
-            // BtnAggiungi
+            // btnAggiungiLezione
             // 
-            this.BtnAggiungi.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.BtnAggiungi.Location = new System.Drawing.Point(777, 16);
-            this.BtnAggiungi.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.BtnAggiungi.Name = "BtnAggiungi";
-            this.BtnAggiungi.Size = new System.Drawing.Size(123, 100);
-            this.BtnAggiungi.TabIndex = 1;
-            this.BtnAggiungi.Text = "Aggiungi";
-            this.BtnAggiungi.UseVisualStyleBackColor = true;
-            this.BtnAggiungi.Click += new System.EventHandler(this.BtnAggiungi_Click);
+            this.btnAggiungiLezione.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnAggiungiLezione.Location = new System.Drawing.Point(464, 15);
+            this.btnAggiungiLezione.Name = "btnAggiungiLezione";
+            this.btnAggiungiLezione.Size = new System.Drawing.Size(125, 61);
+            this.btnAggiungiLezione.TabIndex = 1;
+            this.btnAggiungiLezione.Text = "Aggiungi";
+            this.btnAggiungiLezione.UseVisualStyleBackColor = true;
+            this.btnAggiungiLezione.Click += new System.EventHandler(this.BtnAggiungi_Click);
             // 
-            // label2
+            // Aula
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(14, 171);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(83, 23);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Materia:";
+            this.Aula.AutoSize = true;
+            this.Aula.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Aula.Location = new System.Drawing.Point(14, 175);
+            this.Aula.Name = "Aula";
+            this.Aula.Size = new System.Drawing.Size(54, 23);
+            this.Aula.TabIndex = 2;
+            this.Aula.Text = "Aula:";
             // 
-            // label3
+            // Descrizione
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(14, 220);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(117, 23);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "Descrizione:";
+            this.Descrizione.AutoSize = true;
+            this.Descrizione.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Descrizione.Location = new System.Drawing.Point(12, 231);
+            this.Descrizione.Name = "Descrizione";
+            this.Descrizione.Size = new System.Drawing.Size(117, 23);
+            this.Descrizione.TabIndex = 3;
+            this.Descrizione.Text = "Descrizione:";
             // 
-            // label4
+            // DataFine
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(281, 119);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(95, 23);
-            this.label4.TabIndex = 4;
-            this.label4.Text = "Data fine:";
+            this.DataFine.AutoSize = true;
+            this.DataFine.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.DataFine.Location = new System.Drawing.Point(281, 120);
+            this.DataFine.Name = "DataFine";
+            this.DataFine.Size = new System.Drawing.Size(95, 23);
+            this.DataFine.TabIndex = 4;
+            this.DataFine.Text = "Data fine:";
             // 
-            // CmbCorso
+            // ckdLstBoxPresenti
             // 
-            this.CmbCorso.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.CmbCorso.FormattingEnabled = true;
-            this.CmbCorso.Location = new System.Drawing.Point(115, 115);
-            this.CmbCorso.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.CmbCorso.Name = "CmbCorso";
-            this.CmbCorso.Size = new System.Drawing.Size(138, 31);
-            this.CmbCorso.TabIndex = 1;
-            this.CmbCorso.SelectedIndexChanged += new System.EventHandler(this.CmbCorso_SelectedIndexChanged);
+            this.ckdLstBoxPresenti.FormattingEnabled = true;
+            this.ckdLstBoxPresenti.Location = new System.Drawing.Point(287, 258);
+            this.ckdLstBoxPresenti.Name = "ckdLstBoxPresenti";
+            this.ckdLstBoxPresenti.Size = new System.Drawing.Size(302, 284);
+            this.ckdLstBoxPresenti.TabIndex = 5;
             // 
-            // ChcPresenti
+            // cmbBoxAula
             // 
-            this.ChcPresenti.FormattingEnabled = true;
-            this.ChcPresenti.Location = new System.Drawing.Point(287, 248);
-            this.ChcPresenti.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.ChcPresenti.Name = "ChcPresenti";
-            this.ChcPresenti.Size = new System.Drawing.Size(302, 334);
-            this.ChcPresenti.TabIndex = 5;
+            this.cmbBoxAula.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBoxAula.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.cmbBoxAula.FormattingEnabled = true;
+            this.cmbBoxAula.Location = new System.Drawing.Point(115, 172);
+            this.cmbBoxAula.Name = "cmbBoxAula";
+            this.cmbBoxAula.Size = new System.Drawing.Size(138, 31);
+            this.cmbBoxAula.TabIndex = 2;
             // 
-            // label5
+            // Presenti
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(14, 115);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(69, 23);
-            this.label5.TabIndex = 7;
-            this.label5.Text = "Corso:";
+            this.Presenti.AutoSize = true;
+            this.Presenti.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Presenti.Location = new System.Drawing.Point(287, 231);
+            this.Presenti.Name = "Presenti";
+            this.Presenti.Size = new System.Drawing.Size(88, 23);
+            this.Presenti.TabIndex = 10;
+            this.Presenti.Text = "Presenti:";
             // 
-            // CmbMateria
+            // dttFine
             // 
-            this.CmbMateria.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.CmbMateria.FormattingEnabled = true;
-            this.CmbMateria.Items.AddRange(new object[] {
+            this.dttFine.Location = new System.Drawing.Point(382, 117);
+            this.dttFine.Name = "dttFine";
+            this.dttFine.Size = new System.Drawing.Size(207, 25);
+            this.dttFine.TabIndex = 3;
+            // 
+            // Docente
+            // 
+            this.Docente.AutoSize = true;
+            this.Docente.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Docente.Location = new System.Drawing.Point(281, 175);
+            this.Docente.Name = "Docente";
+            this.Docente.Size = new System.Drawing.Size(89, 23);
+            this.Docente.TabIndex = 12;
+            this.Docente.Text = "Docente:";
+            // 
+            // cmbBoxDocente
+            // 
+            this.cmbBoxDocente.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBoxDocente.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.cmbBoxDocente.FormattingEnabled = true;
+            this.cmbBoxDocente.Location = new System.Drawing.Point(382, 172);
+            this.cmbBoxDocente.Name = "cmbBoxDocente";
+            this.cmbBoxDocente.Size = new System.Drawing.Size(207, 31);
+            this.cmbBoxDocente.TabIndex = 4;
+            // 
+            // txtBoxDescrizione
+            // 
+            this.txtBoxDescrizione.Location = new System.Drawing.Point(12, 258);
+            this.txtBoxDescrizione.Multiline = true;
+            this.txtBoxDescrizione.Name = "txtBoxDescrizione";
+            this.txtBoxDescrizione.Size = new System.Drawing.Size(250, 281);
+            this.txtBoxDescrizione.TabIndex = 15;
+            // 
+            // cmbBoxMateria
+            // 
+            this.cmbBoxMateria.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBoxMateria.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.cmbBoxMateria.FormattingEnabled = true;
+            this.cmbBoxMateria.Items.AddRange(new object[] {
             "Informatica",
             "Web Designer",
             "Progettazione",
             "Musica",
             "Marketing"});
-            this.CmbMateria.Location = new System.Drawing.Point(115, 167);
-            this.CmbMateria.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.CmbMateria.Name = "CmbMateria";
-            this.CmbMateria.Size = new System.Drawing.Size(138, 31);
-            this.CmbMateria.TabIndex = 2;
+            this.cmbBoxMateria.Location = new System.Drawing.Point(115, 117);
+            this.cmbBoxMateria.Name = "cmbBoxMateria";
+            this.cmbBoxMateria.Size = new System.Drawing.Size(138, 31);
+            this.cmbBoxMateria.TabIndex = 16;
             // 
-            // label6
+            // Materia
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label6.Location = new System.Drawing.Point(287, 220);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(88, 23);
-            this.label6.TabIndex = 10;
-            this.label6.Text = "Presenti:";
-            // 
-            // DttFine
-            // 
-            this.DttFine.Location = new System.Drawing.Point(374, 115);
-            this.DttFine.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.DttFine.Name = "DttFine";
-            this.DttFine.Size = new System.Drawing.Size(215, 27);
-            this.DttFine.TabIndex = 3;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label7.Location = new System.Drawing.Point(281, 171);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(82, 23);
-            this.label7.TabIndex = 12;
-            this.label7.Text = "Docenti:";
-            // 
-            // CmbDocente
-            // 
-            this.CmbDocente.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.CmbDocente.FormattingEnabled = true;
-            this.CmbDocente.Items.AddRange(new object[] {
-            "Informatica",
-            "Web Designer",
-            "Progettazione",
-            "Musica",
-            "Marketing"});
-            this.CmbDocente.Location = new System.Drawing.Point(374, 167);
-            this.CmbDocente.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.CmbDocente.Name = "CmbDocente";
-            this.CmbDocente.Size = new System.Drawing.Size(215, 31);
-            this.CmbDocente.TabIndex = 4;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label8.Location = new System.Drawing.Point(597, 509);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(54, 23);
-            this.label8.TabIndex = 14;
-            this.label8.Text = "Aula:";
-            // 
-            // CmbAule
-            // 
-            this.CmbAule.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.CmbAule.FormattingEnabled = true;
-            this.CmbAule.Items.AddRange(new object[] {
-            "Informatica",
-            "Web Designer",
-            "Progettazione",
-            "Musica",
-            "Marketing"});
-            this.CmbAule.Location = new System.Drawing.Point(597, 549);
-            this.CmbAule.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.CmbAule.Name = "CmbAule";
-            this.CmbAule.Size = new System.Drawing.Size(303, 31);
-            this.CmbAule.TabIndex = 6;
-            // 
-            // lblDescrizione
-            // 
-            this.lblDescrizione.AutoSize = true;
-            this.lblDescrizione.Location = new System.Drawing.Point(14, 267);
-            this.lblDescrizione.Name = "lblDescrizione";
-            this.lblDescrizione.Size = new System.Drawing.Size(0, 20);
-            this.lblDescrizione.TabIndex = 15;
+            this.Materia.AutoSize = true;
+            this.Materia.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Materia.Location = new System.Drawing.Point(14, 120);
+            this.Materia.Name = "Materia";
+            this.Materia.Size = new System.Drawing.Size(83, 23);
+            this.Materia.TabIndex = 17;
+            this.Materia.Text = "Materia:";
             // 
             // FrmAggiungiLezione
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(914, 600);
-            this.Controls.Add(this.lblDescrizione);
-            this.Controls.Add(this.CmbAule);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.CmbDocente);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.DttFine);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.CmbMateria);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.ChcPresenti);
-            this.Controls.Add(this.CmbCorso);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.BtnAggiungi);
-            this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.ClientSize = new System.Drawing.Size(604, 551);
+            this.Controls.Add(this.cmbBoxMateria);
+            this.Controls.Add(this.Materia);
+            this.Controls.Add(this.txtBoxDescrizione);
+            this.Controls.Add(this.cmbBoxDocente);
+            this.Controls.Add(this.Docente);
+            this.Controls.Add(this.dttFine);
+            this.Controls.Add(this.Presenti);
+            this.Controls.Add(this.cmbBoxAula);
+            this.Controls.Add(this.ckdLstBoxPresenti);
+            this.Controls.Add(this.DataFine);
+            this.Controls.Add(this.Descrizione);
+            this.Controls.Add(this.Aula);
+            this.Controls.Add(this.btnAggiungiLezione);
+            this.Controls.Add(this.AggiungiLezione);
+            this.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "FrmAggiungiLezione";
-            this.Text = "FrmAggiungiLezione";
+            this.Text = "Aggiungi lezione";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -253,21 +215,19 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button BtnAggiungi;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ComboBox CmbCorso;
-        private System.Windows.Forms.CheckedListBox ChcPresenti;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.ComboBox CmbMateria;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.DateTimePicker DttFine;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.ComboBox CmbDocente;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.ComboBox CmbAule;
-        private System.Windows.Forms.Label lblDescrizione;
+        private System.Windows.Forms.Label AggiungiLezione;
+        private System.Windows.Forms.Button btnAggiungiLezione;
+        private System.Windows.Forms.Label Aula;
+        private System.Windows.Forms.Label Descrizione;
+        private System.Windows.Forms.Label DataFine;
+        private System.Windows.Forms.CheckedListBox ckdLstBoxPresenti;
+        private System.Windows.Forms.ComboBox cmbBoxAula;
+        private System.Windows.Forms.Label Presenti;
+        private System.Windows.Forms.DateTimePicker dttFine;
+        private System.Windows.Forms.Label Docente;
+        private System.Windows.Forms.ComboBox cmbBoxDocente;
+        private System.Windows.Forms.TextBox txtBoxDescrizione;
+        private System.Windows.Forms.ComboBox cmbBoxMateria;
+        private System.Windows.Forms.Label Materia;
     }
 }

@@ -20,14 +20,14 @@ namespace GestioneCorsi.Library
             InitializeComponent();
             gestioneCorsi = gestione;
 
-            foreach (Lezione lezioni in gestioneCorsi.Lezioni)
-                ckdLstBoxLezioni.Items.Add(lezioni);
+            foreach (Lezione lezione in gestioneCorsi.Lezioni)
+                ckdLstBoxLezioni.Items.Add(lezione);
             ckdLstBoxLezioni.DataSource = null;
             ckdLstBoxLezioni.DataSource = gestioneCorsi.Lezioni;
             ckdLstBoxLezioni.DisplayMember = "Materia";
 
-            foreach (Studente studenti in gestioneCorsi.Studenti)
-                ckdLstBoxStudenti.Items.Add(studenti);
+            foreach (Studente studente in gestioneCorsi.Studenti)
+                ckdLstBoxStudenti.Items.Add(studente);
             ckdLstBoxStudenti.DataSource = null;
             ckdLstBoxStudenti.DataSource = gestioneCorsi.Studenti;
             ckdLstBoxStudenti.DisplayMember = "Nome" + "Cognome";
@@ -38,8 +38,8 @@ namespace GestioneCorsi.Library
             ckdLstBoxDocenti.DataSource = gestioneCorsi.Docenti;
             ckdLstBoxDocenti.DisplayMember = "Nome" + "Cognome";
 
-            foreach (Aula aule in gestioneCorsi.Aule)
-                ckdLstBoxAule.Items.Add(aule);
+            foreach (Aula aula in gestioneCorsi.Aule)
+                ckdLstBoxAule.Items.Add(aula);
             ckdLstBoxAule.DataSource = null;
             ckdLstBoxAule.DataSource = gestioneCorsi.Aule;
             ckdLstBoxAule.DisplayMember = "CodiceAula";
@@ -47,15 +47,15 @@ namespace GestioneCorsi.Library
 
         private void btnAggiungiCorso_Click(object sender, EventArgs e)
         {
-            if (txtBoxNome.Text == "" || txtBoxEdizione.Text == "" || ckdLstBoxLezioni.CheckedItems == null || ckdLstBoxStudenti.CheckedItems == null || ckdLstBoxDocenti.CheckedItems == null || ckdLstBoxAule.CheckedItems == null)
-            {
-                MessageBox.Show("Per procedere devi compilare tutti i campi.");
-                return;
-            }
-
             if (!Int32.TryParse(txtBoxEdizione.Text, out edizione))
             {
                 MessageBox.Show("Devi inserire un numero per l'edizione");
+                return;
+            }
+
+            if (txtBoxNome.Text == "" || txtBoxEdizione.Text == "" || ckdLstBoxLezioni.CheckedItems == null || ckdLstBoxStudenti.CheckedItems == null || ckdLstBoxDocenti.CheckedItems == null || ckdLstBoxAule.CheckedItems == null)
+            {
+                MessageBox.Show("Per procedere devi compilare tutti i campi.");
                 return;
             }
 
@@ -76,6 +76,7 @@ namespace GestioneCorsi.Library
                 aule.Add(aula);
 
             Corso corso = new Corso(txtBoxNome.Text, edizione, lezioni, studenti, docenti, aule);
+            gestioneCorsi.Corsi.Add(corso);
             MessageBox.Show("È stato aggiunto un corso.");
             Close();
             return;

@@ -13,47 +13,59 @@ namespace VignaliDavide_AlejandroDeniel_GestioneCorsi
 {
     public partial class FrmAggiungiLezione : Form
     {
-        private List<Corso> Corsi;
-        private int index = 0;
-        
-        public FrmAggiungiLezione(List<Corso> corsi)
+        Gestione gestioneCorsi;      
+        public FrmAggiungiLezione(Gestione corsi)
         {
             InitializeComponent();
-            CmbCorso.DataSource = null;
-            CmbCorso.DataSource = corsi;
-            DttFine.MinDate = DateTime.Now;
-            DttFine.MaxDate = DateTime.Now.AddYears(2);
-        }
+            gestioneCorsi = corsi;
 
-        public void Ricarica()
-        {
-            ChcPresenti.DataSource = null;
-            CmbDocente.DataSource = null;
-            CmbAule.DataSource = null;
+            foreach (Studente studente in gestioneCorsi.Studenti)
+                ckdLstBoxPresenti.Items.Add(studente);
+            ckdLstBoxPresenti.DataSource = null;
+            ckdLstBoxPresenti.DataSource = gestioneCorsi.Studenti;
+            ckdLstBoxPresenti.DisplayMember = "Nome" + "Cognome";
 
-            ChcPresenti.DataSource = Corsi[index].Studenti;           
-            CmbDocente.DataSource = Corsi[index].Docenti;
-            CmbAule.DataSource = Corsi[index].Aule;
-        }
+            foreach (Docente docente in gestioneCorsi.Docenti)
+                cmbBoxDocente.Items.Add(docente);
+            cmbBoxDocente.DataSource = null;
+            cmbBoxDocente.DataSource = gestioneCorsi.Docenti;
+            cmbBoxDocente.DisplayMember = "Nome" + "Cognome";
 
-        private void CmbCorso_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            index = CmbCorso.SelectedIndex;
-            Ricarica();
+            foreach (Aula aula in gestioneCorsi.Aule)
+                cmbBoxAula.Items.Add(aula);
+            cmbBoxAula.DataSource = null;
+            cmbBoxAula.DataSource = gestioneCorsi.Aule;
+            cmbBoxAula.DisplayMember = "CodiceAula";
         }
 
         private void BtnAggiungi_Click(object sender, EventArgs e)
         {
-            if (true)
+            if (dttFine.Value <= DateTime.Now)
             {
-
+                MessageBox.Show("La data non può essere passata.");
+                return;
             }
+
+            if (cmbBoxMateria.Text == "" || txtBoxDescrizione.Text == "" || cmbBoxDocente.SelectedItem == null || ckdLstBoxPresenti.CheckedItems == null ||cmbBoxAula.SelectedItem == null)
+            {
+                MessageBox.Show("Per procedere devi compilare tutti i campi.");
+                return;
+            }
+
+            Aula aula = cmbBoxAula.SelectedItem as Aula;
+            int presenti = ckdLstBoxPresenti.CheckedItems.Count;
+            if (aula.Capienza < presenti)
+            {
+                MessageBox.Show("Gli studenti selezionati superano la capienza dell'aula.");
+                return;
+            }
+
             List<Studente> studenti = new List<Studente>();
-            foreach (Studente studente in ChcPresenti.Items)
+            foreach (Studente studente in ckdLstBoxPresenti.Items)
                 studenti.Add(studente);
 
-            Lezione lezione = new Lezione(CmbMateria.Text, lblDescrizione.Text, DttFine.Value,studenti,CmbDocente.SelectedItem as Docente,CmbAule.SelectedItem as Aula);
-            Corsi[index].AggiungiLezione(lezione);
+            Lezione lezione = new Lezione(cmbBoxMateria.Text, txtBoxDescrizione.Text, DateTime.Now, dttFine.Value, studenti, cmbBoxDocente.SelectedItem as Docente, cmbBoxAula.SelectedItem as Aula);
+            gestioneCorsi.Lezioni.Add(lezione);
             Close();
         }
     }

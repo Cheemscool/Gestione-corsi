@@ -10,24 +10,22 @@ namespace GestioneCorsi.Library
     {
         public string Materia { get; }
         public string Descrizione { get; }
-        public DateTime DateInizio { get; }
-        public DateTime DateFine { get; }
+        public DateTime DataInizio { get; }
+        public DateTime DataFine { get; }
         public Docente Docente { get; }
-        private List<Studente> Presenti;
+        public List<Studente> Presenti { get; }
         public Aula Aula { get; }
 
-        public Lezione(string materia,string descrizione, DateTime dateFine, List<Studente> presenti,Docente docente,Aula aula)
+        public Lezione(string materia, string descrizione, DateTime dataInizio, DateTime dataFine, List<Studente> presenti, Docente docente, Aula aula)
         {
             Materia = materia;
             Descrizione = descrizione;
-            DateInizio = DateTime.Now;
-            DateFine = dateFine;
+            DataInizio = dataInizio;
+            DataFine = dataFine;
             Presenti = presenti;
             Docente = docente;
             Aula = aula;
         }
-
-        public void SegnaPresenti(List<Studente> presenti) => Presenti = presenti;
 
         public override string ToString()
         {
