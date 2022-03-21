@@ -22,7 +22,7 @@ namespace VignaliDavide_AlejandroDeniel_GestioneCorsi
             lblDocente.Text = lezione.Docente.ToString();
             lblDescrizione.Text = lezione.Descrizione;
             lblAula.Text = lezione.Aula.CodiceAula;
-            lblData.Text = lezione.DataInizio.ToString() + " " + lezione.DataFine.ToString();
+            lblData.Text = lezione.DataInizio.ToString() + "  |  " + lezione.DataFine.ToString();
             foreach (Studente studente in lezione.Presenti)
                 lstBoxStudenti.Items.Add(studente);
         }

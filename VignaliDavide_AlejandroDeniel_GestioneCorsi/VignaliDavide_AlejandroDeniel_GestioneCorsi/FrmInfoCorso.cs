@@ -20,7 +20,12 @@ namespace VignaliDavide_AlejandroDeniel_GestioneCorsi
             corso = c;
             lblNomeCorso.Text = corso.Nome;
             lblEdizione.Text = corso.Edizione.ToString();
-
+            int media=0;
+            for (int i = 0; i < c.Lezioni.Count; i++)
+            {
+                media+=c.Lezioni[i].Presenti.Count;
+            }
+            LbLMedia.Text = $"Media presenti ({media/ c.Lezioni.Count})";
             LstLezioni.DataSource = null;
             LstStudenti.DataSource = null;
             LstDocenti.DataSource = null;
@@ -42,6 +47,11 @@ namespace VignaliDavide_AlejandroDeniel_GestioneCorsi
 
             FrmInfoLezioni frmInfoLezioni = new FrmInfoLezioni(LstLezioni.SelectedItem as Lezione);
             frmInfoLezioni.Show();
+        }
+
+        private void FrmInfoCorso_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
